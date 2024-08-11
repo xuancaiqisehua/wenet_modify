@@ -1,0 +1,2 @@
+data.list_20240226 : 加入西班牙语、俄语,数据基本均衡，去掉日语
+data.list : lst/aishell.list lst/de_16k.lst lst/es_16k.lst lst/fr_16k.lst lst/librispeech.list lst/ru_16k.lst lst/ru_16k.lst lst/aishell.list

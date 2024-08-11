@@ -1,0 +1,817 @@
+Prepare data, prepare required format
+aishell
+librispeech
+./utils/fix_data_dir.sh: file dataset/librispeech/utt2spk is not in sorted order or not unique, sorting it
+./utils/fix_data_dir.sh: file dataset/librispeech/spk2utt is not in sorted order or not unique, sorting it
+./utils/fix_data_dir.sh: file dataset/librispeech/text is not in sorted order or not unique, sorting it
+./utils/fix_data_dir.sh: file dataset/librispeech/wav.scp is not in sorted order or not unique, sorting it
+fix_data_dir.sh: kept all 120098 utterances.
+fix_data_dir.sh: old files are kept in dataset/aishell/.backup
+2024-01-18 11:17:10,081 INFO Processing dataset/shards/aishell/shard_aishell_000000000.tar 0/121
+2024-01-18 11:17:10,083 INFO Processing dataset/shards/aishell/shard_aishell_000000001.tar 1/121
+2024-01-18 11:17:10,085 INFO Processing dataset/shards/aishell/shard_aishell_000000002.tar 2/121
+2024-01-18 11:17:10,087 INFO Processing dataset/shards/aishell/shard_aishell_000000003.tar 3/121
+2024-01-18 11:17:10,089 INFO Processing dataset/shards/aishell/shard_aishell_000000004.tar 4/121
+2024-01-18 11:17:10,091 INFO Processing dataset/shards/aishell/shard_aishell_000000005.tar 5/121
+2024-01-18 11:17:10,093 INFO Processing dataset/shards/aishell/shard_aishell_000000006.tar 6/121
+2024-01-18 11:17:10,095 INFO Processing dataset/shards/aishell/shard_aishell_000000007.tar 7/121
+2024-01-18 11:17:10,096 INFO Processing dataset/shards/aishell/shard_aishell_000000008.tar 8/121
+2024-01-18 11:17:10,098 INFO Processing dataset/shards/aishell/shard_aishell_000000009.tar 9/121
+2024-01-18 11:17:12,571 INFO read 1.9425249099731445 save 0.0 write 0.5376276969909668
+2024-01-18 11:17:12,574 INFO Processing dataset/shards/aishell/shard_aishell_000000010.tar 10/121
+2024-01-18 11:17:12,586 INFO read 1.949669361114502 save 0.0 write 0.5413076877593994
+2024-01-18 11:17:12,587 INFO read 1.9602313041687012 save 0.0 write 0.5241470336914062
+2024-01-18 11:17:12,588 INFO Processing dataset/shards/aishell/shard_aishell_000000011.tar 11/121
+2024-01-18 11:17:12,590 INFO Processing dataset/shards/aishell/shard_aishell_000000012.tar 12/121
+2024-01-18 11:17:12,592 INFO read 1.9343745708465576 save 0.0 write 0.5644726753234863
+2024-01-18 11:17:12,593 INFO read 1.9322664737701416 save 0.0 write 0.5595629215240479
+2024-01-18 11:17:12,595 INFO Processing dataset/shards/aishell/shard_aishell_000000013.tar 13/121
+2024-01-18 11:17:12,597 INFO Processing dataset/shards/aishell/shard_aishell_000000014.tar 14/121
+2024-01-18 11:17:12,603 INFO read 1.9620823860168457 save 0.0 write 0.5368359088897705
+2024-01-18 11:17:12,606 INFO Processing dataset/shards/aishell/shard_aishell_000000015.tar 15/121
+2024-01-18 11:17:12,618 INFO read 1.9358477592468262 save 0.0 write 0.5748205184936523
+2024-01-18 11:17:12,620 INFO Processing dataset/shards/aishell/shard_aishell_000000016.tar 16/121
+2024-01-18 11:17:12,622 INFO read 1.9415392875671387 save 0.0 write 0.5801224708557129
+2024-01-18 11:17:12,624 INFO Processing dataset/shards/aishell/shard_aishell_000000017.tar 17/121
+fix_data_dir.sh: kept all 281240 utterances.
+2024-01-18 11:17:12,680 INFO read 1.9734625816345215 save 0.0 write 0.6085011959075928
+2024-01-18 11:17:12,683 INFO Processing dataset/shards/aishell/shard_aishell_000000018.tar 18/121
+2024-01-18 11:17:12,768 INFO read 2.100247383117676 save 0.0 write 0.5778477191925049
+2024-01-18 11:17:12,770 INFO Processing dataset/shards/aishell/shard_aishell_000000019.tar 19/121
+2024-01-18 11:17:15,022 INFO read 1.9017398357391357 save 0.0 write 0.5384891033172607
+2024-01-18 11:17:15,024 INFO Processing dataset/shards/aishell/shard_aishell_000000020.tar 20/121
+2024-01-18 11:17:15,056 INFO read 1.895035743713379 save 0.0 write 0.5607969760894775
+2024-01-18 11:17:15,060 INFO Processing dataset/shards/aishell/shard_aishell_000000021.tar 21/121
+2024-01-18 11:17:15,064 INFO read 1.9104740619659424 save 0.0 write 0.5487394332885742
+2024-01-18 11:17:15,068 INFO Processing dataset/shards/aishell/shard_aishell_000000022.tar 22/121
+2024-01-18 11:17:15,068 INFO read 1.8866298198699951 save 0.0 write 0.5664923191070557
+2024-01-18 11:17:15,071 INFO read 1.882551670074463 save 0.0 write 0.5913491249084473
+2024-01-18 11:17:15,072 INFO Processing dataset/shards/aishell/shard_aishell_000000023.tar 23/121
+2024-01-18 11:17:15,073 INFO Processing dataset/shards/aishell/shard_aishell_000000024.tar 24/121
+2024-01-18 11:17:15,079 INFO read 1.8930819034576416 save 0.0 write 0.5571928024291992
+2024-01-18 11:17:15,082 INFO Processing dataset/shards/aishell/shard_aishell_000000025.tar 25/121
+2024-01-18 11:17:15,097 INFO read 1.903388500213623 save 0.0 write 0.5891604423522949
+2024-01-18 11:17:15,100 INFO Processing dataset/shards/aishell/shard_aishell_000000026.tar 26/121
+2024-01-18 11:17:15,134 INFO read 1.888789176940918 save 0.0 write 0.6121320724487305
+2024-01-18 11:17:15,138 INFO Processing dataset/shards/aishell/shard_aishell_000000027.tar 27/121
+2024-01-18 11:17:15,198 INFO read 1.8995800018310547 save 0.0 write 0.5190510749816895
+2024-01-18 11:17:15,201 INFO Processing dataset/shards/aishell/shard_aishell_000000028.tar 28/121
+2024-01-18 11:17:15,219 INFO read 1.8855557441711426 save 0.0 write 0.6418061256408691
+2024-01-18 11:17:15,223 INFO Processing dataset/shards/aishell/shard_aishell_000000029.tar 29/121
+2024-01-18 11:17:17,522 INFO read 1.9657728672027588 save 0.0 write 0.5251076221466064
+2024-01-18 11:17:17,525 INFO Processing dataset/shards/aishell/shard_aishell_000000030.tar 30/121
+2024-01-18 11:17:17,571 INFO read 1.966869592666626 save 0.0 write 0.5292370319366455
+2024-01-18 11:17:17,573 INFO Processing dataset/shards/aishell/shard_aishell_000000031.tar 31/121
+2024-01-18 11:17:17,580 INFO read 1.9713959693908691 save 0.0 write 0.541447639465332
+2024-01-18 11:17:17,584 INFO Processing dataset/shards/aishell/shard_aishell_000000032.tar 32/121
+2024-01-18 11:17:17,589 INFO read 1.971501350402832 save 0.0 write 0.5382263660430908
+2024-01-18 11:17:17,592 INFO Processing dataset/shards/aishell/shard_aishell_000000033.tar 33/121
+2024-01-18 11:17:17,593 INFO read 1.963498592376709 save 0.0 write 0.5396461486816406
+2024-01-18 11:17:17,596 INFO Processing dataset/shards/aishell/shard_aishell_000000034.tar 34/121
+2024-01-18 11:17:17,664 INFO read 1.9773287773132324 save 0.0 write 0.5410559177398682
+2024-01-18 11:17:17,667 INFO Processing dataset/shards/aishell/shard_aishell_000000035.tar 35/121
+2024-01-18 11:17:17,674 INFO read 1.9484589099884033 save 0.0 write 0.643500566482544
+2024-01-18 11:17:17,678 INFO Processing dataset/shards/aishell/shard_aishell_000000036.tar 36/121
+2024-01-18 11:17:17,724 INFO read 1.9800879955291748 save 0.0 write 0.6345634460449219
+2024-01-18 11:17:17,725 INFO read 1.984086275100708 save 0.0 write 0.532477617263794
+2024-01-18 11:17:17,727 INFO Processing dataset/shards/aishell/shard_aishell_000000037.tar 37/121
+2024-01-18 11:17:17,729 INFO Processing dataset/shards/aishell/shard_aishell_000000038.tar 38/121
+2024-01-18 11:17:17,756 INFO read 1.9666635990142822 save 0.0 write 0.557748556137085
+2024-01-18 11:17:17,759 INFO Processing dataset/shards/aishell/shard_aishell_000000039.tar 39/121
+fix_data_dir.sh: old files are kept in dataset/librispeech/.backup
+2024-01-18 11:17:20,097 INFO read 2.057835102081299 save 0.0 write 0.5065526962280273
+2024-01-18 11:17:20,099 INFO Processing dataset/shards/aishell/shard_aishell_000000040.tar 40/121
+2024-01-18 11:17:20,108 INFO read 2.048093557357788 save 0.0 write 0.47449493408203125
+2024-01-18 11:17:20,110 INFO Processing dataset/shards/aishell/shard_aishell_000000041.tar 41/121
+2024-01-18 11:17:20,181 INFO read 2.0731189250946045 save 0.0 write 0.5077123641967773
+2024-01-18 11:17:20,184 INFO Processing dataset/shards/aishell/shard_aishell_000000042.tar 42/121
+2024-01-18 11:17:20,184 INFO read 2.078430652618408 save 0.0 write 0.5153143405914307
+2024-01-18 11:17:20,186 INFO Processing dataset/shards/aishell/shard_aishell_000000043.tar 43/121
+2024-01-18 11:17:20,207 INFO read 2.0546140670776367 save 0.0 write 0.5486843585968018
+2024-01-18 11:17:20,213 INFO Processing dataset/shards/aishell/shard_aishell_000000044.tar 44/121
+2024-01-18 11:17:20,276 INFO read 2.064575433731079 save 0.0 write 0.5254373550415039
+2024-01-18 11:17:20,280 INFO Processing dataset/shards/aishell/shard_aishell_000000045.tar 45/121
+2024-01-18 11:17:20,288 INFO read 2.062328338623047 save 0.0 write 0.4914395809173584
+2024-01-18 11:17:20,290 INFO Processing dataset/shards/aishell/shard_aishell_000000046.tar 46/121
+2024-01-18 11:17:20,309 INFO read 2.071479082107544 save 0.0 write 0.5626425743103027
+2024-01-18 11:17:20,312 INFO Processing dataset/shards/aishell/shard_aishell_000000047.tar 47/121
+2024-01-18 11:17:20,312 INFO read 2.069957971572876 save 0.0 write 0.505964994430542
+2024-01-18 11:17:20,316 INFO Processing dataset/shards/aishell/shard_aishell_000000048.tar 48/121
+2024-01-18 11:17:20,420 INFO read 2.065863609313965 save 0.0 write 0.5862805843353271
+2024-01-18 11:17:20,423 INFO Processing dataset/shards/aishell/shard_aishell_000000049.tar 49/121
+2024-01-18 11:17:20,689 INFO Processing dataset/shards/librispeech/shard_librispeech_000000000.tar 0/282
+2024-01-18 11:17:20,692 INFO Processing dataset/shards/librispeech/shard_librispeech_000000001.tar 1/282
+2024-01-18 11:17:20,695 INFO Processing dataset/shards/librispeech/shard_librispeech_000000002.tar 2/282
+2024-01-18 11:17:20,698 INFO Processing dataset/shards/librispeech/shard_librispeech_000000003.tar 3/282
+2024-01-18 11:17:20,701 INFO Processing dataset/shards/librispeech/shard_librispeech_000000004.tar 4/282
+2024-01-18 11:17:20,704 INFO Processing dataset/shards/librispeech/shard_librispeech_000000005.tar 5/282
+2024-01-18 11:17:20,707 INFO Processing dataset/shards/librispeech/shard_librispeech_000000006.tar 6/282
+2024-01-18 11:17:20,709 INFO Processing dataset/shards/librispeech/shard_librispeech_000000007.tar 7/282
+2024-01-18 11:17:20,712 INFO Processing dataset/shards/librispeech/shard_librispeech_000000008.tar 8/282
+2024-01-18 11:17:20,714 INFO Processing dataset/shards/librispeech/shard_librispeech_000000009.tar 9/282
+2024-01-18 11:17:23,970 INFO read 3.2842116355895996 save 0.0 write 0.5673296451568604
+2024-01-18 11:17:23,973 INFO read 3.286604881286621 save 0.0 write 0.5783705711364746
+2024-01-18 11:17:23,973 INFO Processing dataset/shards/aishell/shard_aishell_000000050.tar 50/121
+2024-01-18 11:17:23,976 INFO Processing dataset/shards/aishell/shard_aishell_000000051.tar 51/121
+2024-01-18 11:17:24,024 INFO read 3.2783632278442383 save 0.0 write 0.5508918762207031
+2024-01-18 11:17:24,027 INFO Processing dataset/shards/aishell/shard_aishell_000000052.tar 52/121
+2024-01-18 11:17:24,130 INFO read 3.354339838027954 save 0.0 write 0.5550916194915771
+2024-01-18 11:17:24,133 INFO read 3.3780677318573 save 0.0 write 0.5636141300201416
+2024-01-18 11:17:24,134 INFO Processing dataset/shards/aishell/shard_aishell_000000053.tar 53/121
+2024-01-18 11:17:24,136 INFO Processing dataset/shards/aishell/shard_aishell_000000054.tar 54/121
+2024-01-18 11:17:24,245 INFO read 3.3984785079956055 save 0.0 write 0.5491163730621338
+2024-01-18 11:17:24,248 INFO Processing dataset/shards/aishell/shard_aishell_000000055.tar 55/121
+2024-01-18 11:17:24,327 INFO read 3.460000514984131 save 0.0 write 0.5793967247009277
+2024-01-18 11:17:24,331 INFO Processing dataset/shards/aishell/shard_aishell_000000056.tar 56/121
+2024-01-18 11:17:24,675 INFO read 3.7880542278289795 save 0.0 write 0.5629920959472656
+2024-01-18 11:17:24,679 INFO Processing dataset/shards/aishell/shard_aishell_000000057.tar 57/121
+2024-01-18 11:17:24,703 INFO read 3.8240697383880615 save 0.0 write 0.5589497089385986
+2024-01-18 11:17:24,707 INFO Processing dataset/shards/aishell/shard_aishell_000000058.tar 58/121
+2024-01-18 11:17:25,033 INFO read 4.028437614440918 save 0.0 write 0.5727105140686035
+2024-01-18 11:17:25,036 INFO Processing dataset/shards/aishell/shard_aishell_000000059.tar 59/121
+2024-01-18 11:17:30,144 INFO read 5.55028223991394 save 0.0 write 0.5588023662567139
+2024-01-18 11:17:30,146 INFO Processing dataset/shards/aishell/shard_aishell_000000060.tar 60/121
+2024-01-18 11:17:30,166 INFO read 5.579651355743408 save 0.0 write 0.6019670963287354
+2024-01-18 11:17:30,170 INFO Processing dataset/shards/aishell/shard_aishell_000000061.tar 61/121
+2024-01-18 11:17:30,185 INFO read 5.589497327804565 save 0.0 write 0.6137135028839111
+2024-01-18 11:17:30,188 INFO Processing dataset/shards/aishell/shard_aishell_000000062.tar 62/121
+2024-01-18 11:17:30,276 INFO read 5.526174306869507 save 0.0 write 0.6062180995941162
+2024-01-18 11:17:30,279 INFO Processing dataset/shards/aishell/shard_aishell_000000063.tar 63/121
+2024-01-18 11:17:30,291 INFO read 5.553009986877441 save 0.0 write 0.5933618545532227
+2024-01-18 11:17:30,295 INFO Processing dataset/shards/aishell/shard_aishell_000000064.tar 64/121
+2024-01-18 11:17:30,444 INFO read 5.583022356033325 save 0.0 write 0.6037850379943848
+2024-01-18 11:17:30,448 INFO Processing dataset/shards/aishell/shard_aishell_000000065.tar 65/121
+2024-01-18 11:17:30,459 INFO read 5.170433044433594 save 0.0 write 0.5739293098449707
+2024-01-18 11:17:30,463 INFO Processing dataset/shards/aishell/shard_aishell_000000066.tar 66/121
+2024-01-18 11:17:30,491 INFO read 5.215973615646362 save 0.0 write 0.5876920223236084
+2024-01-18 11:17:30,494 INFO Processing dataset/shards/aishell/shard_aishell_000000067.tar 67/121
+2024-01-18 11:17:30,583 INFO read 5.61231255531311 save 0.0 write 0.6306357383728027
+2024-01-18 11:17:30,587 INFO Processing dataset/shards/aishell/shard_aishell_000000068.tar 68/121
+2024-01-18 11:17:30,761 INFO read 5.092548370361328 save 0.0 write 0.6221013069152832
+2024-01-18 11:17:30,766 INFO Processing dataset/shards/aishell/shard_aishell_000000069.tar 69/121
+2024-01-18 11:17:36,533 INFO read 5.795858383178711 save 0.0 write 0.5825707912445068
+2024-01-18 11:17:36,537 INFO Processing dataset/shards/aishell/shard_aishell_000000070.tar 70/121
+2024-01-18 11:17:36,565 INFO read 5.793266773223877 save 0.0 write 0.5761280059814453
+2024-01-18 11:17:36,568 INFO Processing dataset/shards/aishell/shard_aishell_000000071.tar 71/121
+2024-01-18 11:17:36,578 INFO read 5.798288583755493 save 0.0 write 0.6013519763946533
+2024-01-18 11:17:36,581 INFO Processing dataset/shards/aishell/shard_aishell_000000072.tar 72/121
+2024-01-18 11:17:36,670 INFO read 5.788985729217529 save 0.0 write 0.5925750732421875
+2024-01-18 11:17:36,674 INFO Processing dataset/shards/aishell/shard_aishell_000000073.tar 73/121
+2024-01-18 11:17:36,710 INFO read 5.804518461227417 save 0.0 write 0.6024675369262695
+2024-01-18 11:17:36,712 INFO Processing dataset/shards/aishell/shard_aishell_000000074.tar 74/121
+2024-01-18 11:17:36,797 INFO read 5.699895858764648 save 0.0 write 0.5934514999389648
+2024-01-18 11:17:36,800 INFO Processing dataset/shards/aishell/shard_aishell_000000075.tar 75/121
+2024-01-18 11:17:36,831 INFO read 5.77194356918335 save 0.0 write 0.6019878387451172
+2024-01-18 11:17:36,835 INFO Processing dataset/shards/aishell/shard_aishell_000000076.tar 76/121
+2024-01-18 11:17:36,837 INFO read 5.774837493896484 save 0.0 write 0.5914919376373291
+2024-01-18 11:17:36,840 INFO Processing dataset/shards/aishell/shard_aishell_000000077.tar 77/121
+2024-01-18 11:17:36,958 INFO read 5.720434188842773 save 0.0 write 0.6409440040588379
+2024-01-18 11:17:36,960 INFO Processing dataset/shards/aishell/shard_aishell_000000078.tar 78/121
+2024-01-18 11:17:36,991 INFO read 5.613218069076538 save 0.0 write 0.6015751361846924
+2024-01-18 11:17:36,994 INFO Processing dataset/shards/aishell/shard_aishell_000000079.tar 79/121
+2024-01-18 11:17:43,735 INFO read 6.616549491882324 save 0.0 write 0.5732607841491699
+2024-01-18 11:17:43,737 INFO Processing dataset/shards/aishell/shard_aishell_000000080.tar 80/121
+2024-01-18 11:17:43,739 INFO read 6.57481837272644 save 0.0 write 0.573932409286499
+2024-01-18 11:17:43,741 INFO read 6.592609405517578 save 0.0 write 0.5721750259399414
+2024-01-18 11:17:43,742 INFO Processing dataset/shards/aishell/shard_aishell_000000081.tar 81/121
+2024-01-18 11:17:43,744 INFO Processing dataset/shards/aishell/shard_aishell_000000082.tar 82/121
+2024-01-18 11:17:43,900 INFO read 6.612428426742554 save 0.0 write 0.566413164138794
+2024-01-18 11:17:43,902 INFO read 6.628084182739258 save 0.0 write 0.5910730361938477
+2024-01-18 11:17:43,903 INFO Processing dataset/shards/aishell/shard_aishell_000000083.tar 83/121
+2024-01-18 11:17:43,905 INFO Processing dataset/shards/aishell/shard_aishell_000000084.tar 84/121
+2024-01-18 11:17:44,029 INFO read 6.6492578983306885 save 0.0 write 0.5710878372192383
+2024-01-18 11:17:44,032 INFO Processing dataset/shards/aishell/shard_aishell_000000085.tar 85/121
+2024-01-18 11:17:44,033 INFO read 6.622034072875977 save 0.0 write 0.5625154972076416
+2024-01-18 11:17:44,036 INFO Processing dataset/shards/aishell/shard_aishell_000000086.tar 86/121
+2024-01-18 11:17:44,094 INFO read 6.673491954803467 save 0.0 write 0.5773894786834717
+2024-01-18 11:17:44,097 INFO Processing dataset/shards/aishell/shard_aishell_000000087.tar 87/121
+2024-01-18 11:17:44,239 INFO read 6.695921421051025 save 0.0 write 0.5750415325164795
+2024-01-18 11:17:44,243 INFO Processing dataset/shards/aishell/shard_aishell_000000088.tar 88/121
+2024-01-18 11:17:44,346 INFO read 6.7254369258880615 save 0.0 write 0.6173653602600098
+2024-01-18 11:17:44,349 INFO Processing dataset/shards/aishell/shard_aishell_000000089.tar 89/121
+2024-01-18 11:17:48,200 INFO read 3.9024763107299805 save 0.0 write 0.552504301071167
+2024-01-18 11:17:48,202 INFO Processing dataset/shards/aishell/shard_aishell_000000090.tar 90/121
+2024-01-18 11:17:48,240 INFO read 3.916525363922119 save 0.0 write 0.5734574794769287
+2024-01-18 11:17:48,248 INFO read 3.919844627380371 save 0.0 write 0.5758600234985352
+2024-01-18 11:17:48,249 INFO Processing dataset/shards/aishell/shard_aishell_000000091.tar 91/121
+2024-01-18 11:17:48,251 INFO Processing dataset/shards/aishell/shard_aishell_000000092.tar 92/121
+2024-01-18 11:17:48,321 INFO read 3.8653745651245117 save 0.0 write 0.5452394485473633
+2024-01-18 11:17:48,324 INFO Processing dataset/shards/aishell/shard_aishell_000000093.tar 93/121
+2024-01-18 11:17:48,392 INFO read 3.91047739982605 save 0.0 write 0.5684390068054199
+2024-01-18 11:17:48,395 INFO Processing dataset/shards/aishell/shard_aishell_000000094.tar 94/121
+2024-01-18 11:17:48,412 INFO read 3.827690839767456 save 0.0 write 0.5444116592407227
+2024-01-18 11:17:48,414 INFO Processing dataset/shards/aishell/shard_aishell_000000095.tar 95/121
+2024-01-18 11:17:48,460 INFO read 3.8580405712127686 save 0.0 write 0.5584321022033691
+2024-01-18 11:17:48,462 INFO Processing dataset/shards/aishell/shard_aishell_000000096.tar 96/121
+2024-01-18 11:17:48,506 INFO read 3.841430902481079 save 0.0 write 0.5585088729858398
+2024-01-18 11:17:48,509 INFO Processing dataset/shards/aishell/shard_aishell_000000097.tar 97/121
+2024-01-18 11:17:48,611 INFO read 3.806783676147461 save 0.0 write 0.5536677837371826
+2024-01-18 11:17:48,613 INFO Processing dataset/shards/aishell/shard_aishell_000000098.tar 98/121
+2024-01-18 11:17:48,851 INFO read 3.905121326446533 save 0.0 write 0.5875849723815918
+2024-01-18 11:17:48,854 INFO Processing dataset/shards/aishell/shard_aishell_000000099.tar 99/121
+2024-01-18 11:17:53,794 INFO read 5.011934041976929 save 0.0 write 0.5717716217041016
+2024-01-18 11:17:53,798 INFO Processing dataset/shards/aishell/shard_aishell_000000100.tar 100/121
+2024-01-18 11:17:53,907 INFO read 5.055830240249634 save 0.0 write 0.5932631492614746
+2024-01-18 11:17:53,911 INFO Processing dataset/shards/aishell/shard_aishell_000000101.tar 101/121
+2024-01-18 11:17:53,946 INFO read 5.090988874435425 save 0.0 write 0.5954318046569824
+2024-01-18 11:17:53,948 INFO Processing dataset/shards/aishell/shard_aishell_000000102.tar 102/121
+2024-01-18 11:17:53,981 INFO read 5.059352159500122 save 0.0 write 0.5900321006774902
+2024-01-18 11:17:53,984 INFO Processing dataset/shards/aishell/shard_aishell_000000103.tar 103/121
+2024-01-18 11:17:54,029 INFO read 5.028859615325928 save 0.0 write 0.5774190425872803
+2024-01-18 11:17:54,033 INFO Processing dataset/shards/aishell/shard_aishell_000000104.tar 104/121
+2024-01-18 11:17:54,117 INFO read 5.088304042816162 save 0.0 write 0.6240262985229492
+2024-01-18 11:17:54,121 INFO Processing dataset/shards/aishell/shard_aishell_000000105.tar 105/121
+2024-01-18 11:17:54,123 INFO read 5.074673652648926 save 0.0 write 0.5780003070831299
+2024-01-18 11:17:54,126 INFO Processing dataset/shards/aishell/shard_aishell_000000106.tar 106/121
+2024-01-18 11:17:54,208 INFO read 5.0823962688446045 save 0.0 write 0.6081676483154297
+2024-01-18 11:17:54,210 INFO Processing dataset/shards/aishell/shard_aishell_000000107.tar 107/121
+2024-01-18 11:17:54,306 INFO read 5.083604335784912 save 0.0 write 0.6002569198608398
+2024-01-18 11:17:54,310 INFO Processing dataset/shards/aishell/shard_aishell_000000108.tar 108/121
+2024-01-18 11:17:54,564 INFO read 5.099703550338745 save 0.0 write 0.6010878086090088
+2024-01-18 11:17:54,567 INFO Processing dataset/shards/aishell/shard_aishell_000000109.tar 109/121
+2024-01-18 11:17:57,400 INFO read 35.54301047325134 save 0.0 write 1.1506667137145996
+2024-01-18 11:17:57,404 INFO Processing dataset/shards/librispeech/shard_librispeech_000000010.tar 10/282
+2024-01-18 11:17:57,410 INFO read 35.50984573364258 save 0.0 write 1.1878266334533691
+2024-01-18 11:17:57,414 INFO Processing dataset/shards/librispeech/shard_librispeech_000000011.tar 11/282
+2024-01-18 11:17:57,670 INFO read 35.68132448196411 save 0.0 write 1.2854981422424316
+2024-01-18 11:17:57,674 INFO Processing dataset/shards/librispeech/shard_librispeech_000000012.tar 12/282
+2024-01-18 11:17:57,694 INFO read 35.76228880882263 save 0.0 write 1.2083427906036377
+2024-01-18 11:17:57,699 INFO Processing dataset/shards/librispeech/shard_librispeech_000000013.tar 13/282
+2024-01-18 11:17:57,934 INFO read 35.936522245407104 save 0.0 write 1.2821955680847168
+2024-01-18 11:17:57,938 INFO Processing dataset/shards/librispeech/shard_librispeech_000000014.tar 14/282
+2024-01-18 11:17:58,269 INFO read 36.40060067176819 save 0.0 write 1.1500523090362549
+2024-01-18 11:17:58,273 INFO Processing dataset/shards/librispeech/shard_librispeech_000000015.tar 15/282
+2024-01-18 11:17:58,335 INFO read 3.9703891277313232 save 0.0 write 0.5589892864227295
+2024-01-18 11:17:58,338 INFO Processing dataset/shards/aishell/shard_aishell_000000110.tar 110/121
+2024-01-18 11:17:58,399 INFO read 3.90995454788208 save 0.0 write 0.5703432559967041
+2024-01-18 11:17:58,401 INFO Processing dataset/shards/aishell/shard_aishell_000000111.tar 111/121
+2024-01-18 11:17:58,404 INFO read 3.8887627124786377 save 0.0 write 0.559251070022583
+2024-01-18 11:17:58,407 INFO Processing dataset/shards/aishell/shard_aishell_000000112.tar 112/121
+2024-01-18 11:17:58,457 INFO read 36.59547257423401 save 0.0 write 1.1519460678100586
+2024-01-18 11:17:58,462 INFO Processing dataset/shards/librispeech/shard_librispeech_000000016.tar 16/282
+2024-01-18 11:17:58,496 INFO read 3.887902021408081 save 0.0 write 0.5673091411590576
+2024-01-18 11:17:58,498 INFO Processing dataset/shards/aishell/shard_aishell_000000113.tar 113/121
+2024-01-18 11:17:58,499 INFO read 3.915764331817627 save 0.0 write 0.5906779766082764
+2024-01-18 11:17:58,502 INFO Processing dataset/shards/aishell/shard_aishell_000000114.tar 114/121
+2024-01-18 11:17:58,540 INFO read 3.8524155616760254 save 0.0 write 0.5541083812713623
+2024-01-18 11:17:58,543 INFO Processing dataset/shards/aishell/shard_aishell_000000115.tar 115/121
+2024-01-18 11:17:58,584 INFO read 3.8831136226654053 save 0.0 write 0.572272539138794
+2024-01-18 11:17:58,587 INFO Processing dataset/shards/aishell/shard_aishell_000000116.tar 116/121
+2024-01-18 11:17:58,722 INFO read 3.917933940887451 save 0.0 write 0.5849752426147461
+2024-01-18 11:17:58,725 INFO Processing dataset/shards/aishell/shard_aishell_000000117.tar 117/121
+2024-01-18 11:17:58,809 INFO read 36.94792604446411 save 0.0 write 1.1407561302185059
+2024-01-18 11:17:58,813 INFO Processing dataset/shards/librispeech/shard_librispeech_000000017.tar 17/282
+2024-01-18 11:17:58,826 INFO read 3.930924654006958 save 0.0 write 0.5769593715667725
+2024-01-18 11:17:58,828 INFO Processing dataset/shards/aishell/shard_aishell_000000118.tar 118/121
+2024-01-18 11:17:58,940 INFO read 37.07409381866455 save 0.0 write 1.137712001800537
+2024-01-18 11:17:58,945 INFO Processing dataset/shards/librispeech/shard_librispeech_000000018.tar 18/282
+2024-01-18 11:17:58,955 INFO read 3.823903799057007 save 0.0 write 0.5555722713470459
+2024-01-18 11:17:58,958 INFO Processing dataset/shards/aishell/shard_aishell_000000119.tar 119/121
+2024-01-18 11:17:59,138 INFO read 37.33631634712219 save 0.0 write 1.0758013725280762
+2024-01-18 11:17:59,142 INFO Processing dataset/shards/librispeech/shard_librispeech_000000019.tar 19/282
+2024-01-18 11:18:02,848 INFO read 3.944387674331665 save 0.0 write 0.5579767227172852
+2024-01-18 11:18:02,849 INFO Processing dataset/shards/aishell/shard_aishell_000000120.tar 120/121
+2024-01-18 11:18:02,986 INFO read 4.00410532951355 save 0.0 write 0.5714476108551025
+2024-01-18 11:18:03,030 INFO read 4.033569812774658 save 0.0 write 0.5817945003509521
+2024-01-18 11:18:03,096 INFO read 4.030944585800171 save 0.0 write 0.5585181713104248
+2024-01-18 11:18:03,147 INFO read 4.031925678253174 save 0.0 write 0.6042656898498535
+2024-01-18 11:18:03,179 INFO read 4.0059638023376465 save 0.0 write 0.5773820877075195
+2024-01-18 11:18:03,236 INFO read 4.075074195861816 save 0.0 write 0.6093006134033203
+2024-01-18 11:18:03,298 INFO read 0.38569068908691406 save 0.0 write 0.06114387512207031
+2024-01-18 11:18:03,322 INFO read 4.018426418304443 save 0.0 write 0.5706613063812256
+2024-01-18 11:18:03,359 INFO read 3.960634469985962 save 0.0 write 0.5622894763946533
+2024-01-18 11:18:03,416 INFO read 3.8912367820739746 save 0.0 write 0.5586156845092773
+2024-01-18 11:18:17,530 INFO read 19.14873743057251 save 0.0 write 0.9667072296142578
+2024-01-18 11:18:17,535 INFO Processing dataset/shards/librispeech/shard_librispeech_000000020.tar 20/282
+2024-01-18 11:18:17,956 INFO read 18.69160485267639 save 0.0 write 0.9819080829620361
+2024-01-18 11:18:17,961 INFO Processing dataset/shards/librispeech/shard_librispeech_000000021.tar 21/282
+2024-01-18 11:18:18,137 INFO read 18.66645097732544 save 0.0 write 0.9980859756469727
+2024-01-18 11:18:18,141 INFO Processing dataset/shards/librispeech/shard_librispeech_000000022.tar 22/282
+2024-01-18 11:18:18,571 INFO read 18.618162155151367 save 0.0 write 0.9972434043884277
+2024-01-18 11:18:18,575 INFO Processing dataset/shards/librispeech/shard_librispeech_000000023.tar 23/282
+2024-01-18 11:18:18,747 INFO read 20.08395218849182 save 0.0 write 0.9783987998962402
+2024-01-18 11:18:18,752 INFO Processing dataset/shards/librispeech/shard_librispeech_000000024.tar 24/282
+2024-01-18 11:18:18,921 INFO read 19.935492515563965 save 0.0 write 1.035949945449829
+2024-01-18 11:18:18,928 INFO Processing dataset/shards/librispeech/shard_librispeech_000000025.tar 25/282
+2024-01-18 11:18:18,928 INFO read 20.218488216400146 save 0.0 write 1.000520944595337
+2024-01-18 11:18:18,933 INFO Processing dataset/shards/librispeech/shard_librispeech_000000026.tar 26/282
+2024-01-18 11:18:19,073 INFO read 20.7218656539917 save 0.0 write 0.9264543056488037
+2024-01-18 11:18:19,078 INFO Processing dataset/shards/librispeech/shard_librispeech_000000027.tar 27/282
+2024-01-18 11:18:20,240 INFO read 20.37780261039734 save 0.0 write 1.0377476215362549
+2024-01-18 11:18:20,245 INFO Processing dataset/shards/librispeech/shard_librispeech_000000028.tar 28/282
+2024-01-18 11:18:20,396 INFO read 20.302069425582886 save 0.0 write 0.9408299922943115
+2024-01-18 11:18:20,400 INFO Processing dataset/shards/librispeech/shard_librispeech_000000029.tar 29/282
+2024-01-18 11:18:38,581 INFO read 18.99562120437622 save 0.0 write 1.0004956722259521
+2024-01-18 11:18:38,584 INFO Processing dataset/shards/librispeech/shard_librispeech_000000030.tar 30/282
+2024-01-18 11:18:38,926 INFO read 19.028398275375366 save 0.0 write 0.959359884262085
+2024-01-18 11:18:38,930 INFO Processing dataset/shards/librispeech/shard_librispeech_000000031.tar 31/282
+2024-01-18 11:18:39,526 INFO read 21.061890602111816 save 0.0 write 0.9204351902008057
+2024-01-18 11:18:39,529 INFO Processing dataset/shards/librispeech/shard_librispeech_000000032.tar 32/282
+2024-01-18 11:18:39,728 INFO read 19.70150399208069 save 0.0 write 0.9392704963684082
+2024-01-18 11:18:39,733 INFO Processing dataset/shards/librispeech/shard_librispeech_000000033.tar 33/282
+2024-01-18 11:18:39,809 INFO read 20.903055667877197 save 0.0 write 0.936211347579956
+2024-01-18 11:18:39,813 INFO Processing dataset/shards/librispeech/shard_librispeech_000000034.tar 34/282
+2024-01-18 11:18:40,215 INFO read 20.291282892227173 save 0.0 write 0.9807939529418945
+2024-01-18 11:18:40,221 INFO Processing dataset/shards/librispeech/shard_librispeech_000000035.tar 35/282
+2024-01-18 11:18:40,350 INFO read 21.29329204559326 save 0.0 write 0.9061496257781982
+2024-01-18 11:18:40,353 INFO Processing dataset/shards/librispeech/shard_librispeech_000000036.tar 36/282
+2024-01-18 11:18:40,677 INFO read 20.98617959022522 save 0.0 write 0.9289157390594482
+2024-01-18 11:18:40,681 INFO Processing dataset/shards/librispeech/shard_librispeech_000000037.tar 37/282
+2024-01-18 11:18:41,013 INFO read 19.67422127723694 save 0.0 write 0.9286749362945557
+2024-01-18 11:18:41,014 INFO read 19.8046658039093 save 0.0 write 0.9543814659118652
+2024-01-18 11:18:41,016 INFO Processing dataset/shards/librispeech/shard_librispeech_000000038.tar 38/282
+2024-01-18 11:18:41,019 INFO Processing dataset/shards/librispeech/shard_librispeech_000000039.tar 39/282
+2024-01-18 11:19:00,793 INFO read 21.23609685897827 save 0.0 write 0.9620637893676758
+2024-01-18 11:19:00,797 INFO Processing dataset/shards/librispeech/shard_librispeech_000000040.tar 40/282
+2024-01-18 11:19:00,912 INFO read 21.00103259086609 save 0.0 write 0.971738338470459
+2024-01-18 11:19:00,918 INFO Processing dataset/shards/librispeech/shard_librispeech_000000041.tar 41/282
+2024-01-18 11:19:01,160 INFO read 19.953269720077515 save 0.0 write 0.9758138656616211
+2024-01-18 11:19:01,163 INFO Processing dataset/shards/librispeech/shard_librispeech_000000042.tar 42/282
+2024-01-18 11:19:01,228 INFO read 20.731865882873535 save 0.0 write 0.9569766521453857
+2024-01-18 11:19:01,232 INFO Processing dataset/shards/librispeech/shard_librispeech_000000043.tar 43/282
+2024-01-18 11:19:01,469 INFO read 20.735034227371216 save 0.0 write 0.9914560317993164
+2024-01-18 11:19:01,473 INFO Processing dataset/shards/librispeech/shard_librispeech_000000044.tar 44/282
+2024-01-18 11:19:02,411 INFO read 21.083237648010254 save 0.0 write 0.9637837409973145
+2024-01-18 11:19:02,415 INFO Processing dataset/shards/librispeech/shard_librispeech_000000045.tar 45/282
+2024-01-18 11:19:02,425 INFO read 20.755666971206665 save 0.0 write 0.9779491424560547
+2024-01-18 11:19:02,428 INFO Processing dataset/shards/librispeech/shard_librispeech_000000046.tar 46/282
+2024-01-18 11:19:02,866 INFO read 20.895754098892212 save 0.0 write 0.9415059089660645
+2024-01-18 11:19:02,870 INFO Processing dataset/shards/librispeech/shard_librispeech_000000047.tar 47/282
+2024-01-18 11:19:03,267 INFO read 22.49780797958374 save 0.0 write 0.9463140964508057
+2024-01-18 11:19:03,272 INFO Processing dataset/shards/librispeech/shard_librispeech_000000048.tar 48/282
+2024-01-18 11:19:03,485 INFO read 21.44504141807556 save 0.0 write 1.012319803237915
+2024-01-18 11:19:03,489 INFO Processing dataset/shards/librispeech/shard_librispeech_000000049.tar 49/282
+2024-01-18 11:19:20,403 INFO read 18.02935791015625 save 0.0 write 1.1321673393249512
+2024-01-18 11:19:20,407 INFO Processing dataset/shards/librispeech/shard_librispeech_000000050.tar 50/282
+2024-01-18 11:19:21,217 INFO read 19.220048427581787 save 0.0 write 1.0700900554656982
+2024-01-18 11:19:21,221 INFO Processing dataset/shards/librispeech/shard_librispeech_000000051.tar 51/282
+2024-01-18 11:19:21,349 INFO read 19.426463842391968 save 0.0 write 1.116166114807129
+2024-01-18 11:19:21,353 INFO Processing dataset/shards/librispeech/shard_librispeech_000000052.tar 52/282
+2024-01-18 11:19:21,733 INFO read 19.457758903503418 save 0.0 write 1.102076768875122
+2024-01-18 11:19:21,737 INFO Processing dataset/shards/librispeech/shard_librispeech_000000053.tar 53/282
+2024-01-18 11:19:22,574 INFO read 18.127482652664185 save 0.0 write 1.164527177810669
+2024-01-18 11:19:22,578 INFO Processing dataset/shards/librispeech/shard_librispeech_000000054.tar 54/282
+2024-01-18 11:19:23,212 INFO read 19.670794010162354 save 0.0 write 1.10335111618042
+2024-01-18 11:19:23,216 INFO Processing dataset/shards/librispeech/shard_librispeech_000000055.tar 55/282
+2024-01-18 11:19:23,746 INFO read 21.14660906791687 save 0.0 write 1.1157543659210205
+2024-01-18 11:19:23,750 INFO Processing dataset/shards/librispeech/shard_librispeech_000000056.tar 56/282
+2024-01-18 11:19:23,902 INFO read 19.174157857894897 save 0.0 write 1.2272887229919434
+2024-01-18 11:19:23,905 INFO read 19.89598798751831 save 0.0 write 1.1260244846343994
+2024-01-18 11:19:23,907 INFO Processing dataset/shards/librispeech/shard_librispeech_000000057.tar 57/282
+2024-01-18 11:19:23,910 INFO Processing dataset/shards/librispeech/shard_librispeech_000000058.tar 58/282
+2024-01-18 11:19:24,788 INFO read 21.24744987487793 save 0.0 write 1.1156697273254395
+2024-01-18 11:19:24,791 INFO Processing dataset/shards/librispeech/shard_librispeech_000000059.tar 59/282
+2024-01-18 11:19:39,264 INFO read 16.786476850509644 save 0.0 write 1.1153044700622559
+2024-01-18 11:19:39,268 INFO Processing dataset/shards/librispeech/shard_librispeech_000000060.tar 60/282
+2024-01-18 11:19:39,538 INFO read 17.980806827545166 save 0.0 write 1.1402974128723145
+2024-01-18 11:19:39,542 INFO Processing dataset/shards/librispeech/shard_librispeech_000000061.tar 61/282
+2024-01-18 11:19:40,994 INFO read 18.664749145507812 save 0.0 write 1.098604440689087
+2024-01-18 11:19:40,998 INFO Processing dataset/shards/librispeech/shard_librispeech_000000062.tar 62/282
+2024-01-18 11:19:41,476 INFO read 16.4322247505188 save 0.0 write 1.1240098476409912
+2024-01-18 11:19:41,480 INFO Processing dataset/shards/librispeech/shard_librispeech_000000063.tar 63/282
+2024-01-18 11:19:41,614 INFO read 16.55884337425232 save 0.0 write 1.1380393505096436
+2024-01-18 11:19:41,617 INFO Processing dataset/shards/librispeech/shard_librispeech_000000064.tar 64/282
+2024-01-18 11:19:41,977 INFO read 17.631473302841187 save 0.0 write 1.1197879314422607
+2024-01-18 11:19:41,981 INFO Processing dataset/shards/librispeech/shard_librispeech_000000065.tar 65/282
+2024-01-18 11:19:42,086 INFO read 17.234032154083252 save 0.0 write 1.0928103923797607
+2024-01-18 11:19:42,090 INFO Processing dataset/shards/librispeech/shard_librispeech_000000066.tar 66/282
+2024-01-18 11:19:42,160 INFO read 19.312833309173584 save 0.0 write 1.1001477241516113
+2024-01-18 11:19:42,163 INFO Processing dataset/shards/librispeech/shard_librispeech_000000067.tar 67/282
+2024-01-18 11:19:42,517 INFO read 18.83715510368347 save 0.0 write 1.0917890071868896
+2024-01-18 11:19:42,521 INFO Processing dataset/shards/librispeech/shard_librispeech_000000068.tar 68/282
+2024-01-18 11:19:43,772 INFO read 17.873716831207275 save 0.0 write 1.0968458652496338
+2024-01-18 11:19:43,777 INFO Processing dataset/shards/librispeech/shard_librispeech_000000069.tar 69/282
+2024-01-18 11:20:03,449 INFO read 23.01997995376587 save 0.0 write 1.1506810188293457
+2024-01-18 11:20:03,452 INFO Processing dataset/shards/librispeech/shard_librispeech_000000070.tar 70/282
+2024-01-18 11:20:06,549 INFO read 25.896397590637207 save 0.0 write 1.100428581237793
+2024-01-18 11:20:06,552 INFO Processing dataset/shards/librispeech/shard_librispeech_000000071.tar 71/282
+2024-01-18 11:20:07,433 INFO read 25.33627724647522 save 0.0 write 1.0884969234466553
+2024-01-18 11:20:07,436 INFO Processing dataset/shards/librispeech/shard_librispeech_000000072.tar 72/282
+2024-01-18 11:20:07,515 INFO read 24.229843616485596 save 0.0 write 1.1841518878936768
+2024-01-18 11:20:07,519 INFO Processing dataset/shards/librispeech/shard_librispeech_000000073.tar 73/282
+2024-01-18 11:20:08,224 INFO read 25.448033332824707 save 0.0 write 1.1484806537628174
+2024-01-18 11:20:08,228 INFO Processing dataset/shards/librispeech/shard_librispeech_000000074.tar 74/282
+2024-01-18 11:20:08,360 INFO read 25.707927703857422 save 0.0 write 1.1609654426574707
+2024-01-18 11:20:08,363 INFO Processing dataset/shards/librispeech/shard_librispeech_000000075.tar 75/282
+2024-01-18 11:20:08,541 INFO read 25.446178674697876 save 0.0 write 1.1039767265319824
+2024-01-18 11:20:08,545 INFO Processing dataset/shards/librispeech/shard_librispeech_000000076.tar 76/282
+2024-01-18 11:20:08,610 INFO read 24.891019344329834 save 0.0 write 1.187455654144287
+2024-01-18 11:20:08,614 INFO Processing dataset/shards/librispeech/shard_librispeech_000000077.tar 77/282
+2024-01-18 11:20:10,461 INFO read 25.531463146209717 save 0.0 write 1.1413567066192627
+2024-01-18 11:20:10,467 INFO Processing dataset/shards/librispeech/shard_librispeech_000000078.tar 78/282
+2024-01-18 11:20:11,573 INFO read 28.357606410980225 save 0.0 write 1.0417232513427734
+2024-01-18 11:20:11,577 INFO Processing dataset/shards/librispeech/shard_librispeech_000000079.tar 79/282
+2024-01-18 11:20:30,284 INFO read 25.74288320541382 save 0.0 write 1.0784964561462402
+2024-01-18 11:20:30,288 INFO Processing dataset/shards/librispeech/shard_librispeech_000000080.tar 80/282
+2024-01-18 11:20:32,219 INFO read 23.628841876983643 save 0.0 write 1.1447265148162842
+2024-01-18 11:20:32,222 INFO Processing dataset/shards/librispeech/shard_librispeech_000000081.tar 81/282
+2024-01-18 11:20:34,899 INFO read 25.141608715057373 save 0.0 write 1.13321852684021
+2024-01-18 11:20:34,902 INFO Processing dataset/shards/librispeech/shard_librispeech_000000082.tar 82/282
+2024-01-18 11:20:35,286 INFO read 25.924920797348022 save 0.0 write 1.1234729290008545
+2024-01-18 11:20:35,290 INFO Processing dataset/shards/librispeech/shard_librispeech_000000083.tar 83/282
+2024-01-18 11:20:35,547 INFO read 26.05274510383606 save 0.0 write 1.1215198040008545
+2024-01-18 11:20:35,550 INFO Processing dataset/shards/librispeech/shard_librispeech_000000084.tar 84/282
+2024-01-18 11:20:35,892 INFO read 28.19875931739807 save 0.0 write 1.130500316619873
+2024-01-18 11:20:35,895 INFO Processing dataset/shards/librispeech/shard_librispeech_000000085.tar 85/282
+2024-01-18 11:20:36,631 INFO read 26.970059394836426 save 0.0 write 1.1053576469421387
+2024-01-18 11:20:36,635 INFO Processing dataset/shards/librispeech/shard_librispeech_000000086.tar 86/282
+2024-01-18 11:20:38,067 INFO read 29.47258472442627 save 0.0 write 1.065688133239746
+2024-01-18 11:20:38,071 INFO Processing dataset/shards/librispeech/shard_librispeech_000000087.tar 87/282
+2024-01-18 11:20:38,477 INFO read 26.93533945083618 save 0.0 write 1.0646820068359375
+2024-01-18 11:20:38,481 INFO Processing dataset/shards/librispeech/shard_librispeech_000000088.tar 88/282
+2024-01-18 11:20:39,138 INFO read 26.47285223007202 save 0.0 write 1.078618049621582
+2024-01-18 11:20:39,141 INFO Processing dataset/shards/librispeech/shard_librispeech_000000089.tar 89/282
+2024-01-18 11:20:54,185 INFO read 22.798559427261353 save 0.0 write 1.088561773300171
+2024-01-18 11:20:54,189 INFO Processing dataset/shards/librispeech/shard_librispeech_000000090.tar 90/282
+2024-01-18 11:20:57,069 INFO read 20.68439269065857 save 0.0 write 1.084113359451294
+2024-01-18 11:20:57,072 INFO Processing dataset/shards/librispeech/shard_librispeech_000000091.tar 91/282
+2024-01-18 11:20:57,075 INFO read 23.801167726516724 save 0.0 write 1.0419526100158691
+2024-01-18 11:20:57,078 INFO Processing dataset/shards/librispeech/shard_librispeech_000000092.tar 92/282
+2024-01-18 11:20:57,627 INFO read 20.637762784957886 save 0.0 write 1.084233283996582
+2024-01-18 11:20:57,631 INFO Processing dataset/shards/librispeech/shard_librispeech_000000093.tar 93/282
+2024-01-18 11:20:58,297 INFO read 20.530088186264038 save 0.0 write 1.1224792003631592
+2024-01-18 11:20:58,301 INFO Processing dataset/shards/librispeech/shard_librispeech_000000094.tar 94/282
+2024-01-18 11:20:59,732 INFO read 23.777999877929688 save 0.0 write 1.0424325466156006
+2024-01-18 11:20:59,737 INFO Processing dataset/shards/librispeech/shard_librispeech_000000095.tar 95/282
+2024-01-18 11:21:00,515 INFO read 21.30909299850464 save 0.0 write 1.1243510246276855
+2024-01-18 11:21:00,517 INFO Processing dataset/shards/librispeech/shard_librispeech_000000096.tar 96/282
+2024-01-18 11:21:01,852 INFO read 22.284471035003662 save 0.0 write 1.0762932300567627
+2024-01-18 11:21:01,857 INFO Processing dataset/shards/librispeech/shard_librispeech_000000097.tar 97/282
+2024-01-18 11:21:01,988 INFO read 21.755041360855103 save 0.0 write 1.0818758010864258
+2024-01-18 11:21:01,992 INFO Processing dataset/shards/librispeech/shard_librispeech_000000098.tar 98/282
+2024-01-18 11:21:02,285 INFO read 25.68266534805298 save 0.0 write 1.042194128036499
+2024-01-18 11:21:02,290 INFO Processing dataset/shards/librispeech/shard_librispeech_000000099.tar 99/282
+2024-01-18 11:21:21,878 INFO read 23.69321608543396 save 0.0 write 1.1023881435394287
+2024-01-18 11:21:21,881 INFO Processing dataset/shards/librispeech/shard_librispeech_000000100.tar 100/282
+2024-01-18 11:21:22,039 INFO read 23.883224487304688 save 0.0 write 1.0682733058929443
+2024-01-18 11:21:22,043 INFO Processing dataset/shards/librispeech/shard_librispeech_000000101.tar 101/282
+2024-01-18 11:21:22,069 INFO read 26.83188819885254 save 0.0 write 1.037437915802002
+2024-01-18 11:21:22,074 INFO Processing dataset/shards/librispeech/shard_librispeech_000000102.tar 102/282
+2024-01-18 11:21:22,948 INFO read 24.215229749679565 save 0.0 write 1.0921034812927246
+2024-01-18 11:21:22,951 INFO Processing dataset/shards/librispeech/shard_librispeech_000000103.tar 103/282
+2024-01-18 11:21:23,917 INFO read 23.152743339538574 save 0.0 write 1.0180354118347168
+2024-01-18 11:21:23,920 INFO Processing dataset/shards/librispeech/shard_librispeech_000000104.tar 104/282
+2024-01-18 11:21:24,219 INFO read 22.614200592041016 save 0.0 write 1.077699899673462
+2024-01-18 11:21:24,223 INFO Processing dataset/shards/librispeech/shard_librispeech_000000105.tar 105/282
+2024-01-18 11:21:25,547 INFO read 26.19821333885193 save 0.0 write 1.0378022193908691
+2024-01-18 11:21:25,551 INFO Processing dataset/shards/librispeech/shard_librispeech_000000106.tar 106/282
+2024-01-18 11:21:27,914 INFO read 24.577873706817627 save 0.0 write 1.0366418361663818
+2024-01-18 11:21:27,917 INFO Processing dataset/shards/librispeech/shard_librispeech_000000107.tar 107/282
+2024-01-18 11:21:28,172 INFO read 25.28679656982422 save 0.0 write 1.0187265872955322
+2024-01-18 11:21:28,176 INFO Processing dataset/shards/librispeech/shard_librispeech_000000108.tar 108/282
+2024-01-18 11:21:28,551 INFO read 25.490979433059692 save 0.0 write 1.057847023010254
+2024-01-18 11:21:28,554 INFO Processing dataset/shards/librispeech/shard_librispeech_000000109.tar 109/282
+2024-01-18 11:21:44,188 INFO read 21.202969551086426 save 0.0 write 1.0933105945587158
+2024-01-18 11:21:44,194 INFO Processing dataset/shards/librispeech/shard_librispeech_000000110.tar 110/282
+2024-01-18 11:21:47,111 INFO read 24.00687599182129 save 0.0 write 1.0512712001800537
+2024-01-18 11:21:47,114 INFO Processing dataset/shards/librispeech/shard_librispeech_000000111.tar 111/282
+2024-01-18 11:21:48,286 INFO read 25.136709451675415 save 0.0 write 1.065340280532837
+2024-01-18 11:21:48,286 INFO read 23.26720666885376 save 0.0 write 1.088411808013916
+2024-01-18 11:21:48,289 INFO Processing dataset/shards/librispeech/shard_librispeech_000000112.tar 112/282
+2024-01-18 11:21:48,292 INFO Processing dataset/shards/librispeech/shard_librispeech_000000113.tar 113/282
+2024-01-18 11:21:50,062 INFO read 26.042711973190308 save 0.0 write 1.0580551624298096
+2024-01-18 11:21:50,065 INFO Processing dataset/shards/librispeech/shard_librispeech_000000114.tar 114/282
+2024-01-18 11:21:50,718 INFO read 25.473227977752686 save 0.0 write 1.0121142864227295
+2024-01-18 11:21:50,722 INFO Processing dataset/shards/librispeech/shard_librispeech_000000115.tar 115/282
+2024-01-18 11:21:51,252 INFO read 24.550220012664795 save 0.0 write 1.1409111022949219
+2024-01-18 11:21:51,257 INFO Processing dataset/shards/librispeech/shard_librispeech_000000116.tar 116/282
+2024-01-18 11:21:52,966 INFO read 23.929246187210083 save 0.0 write 1.109586238861084
+2024-01-18 11:21:52,969 INFO Processing dataset/shards/librispeech/shard_librispeech_000000117.tar 117/282
+2024-01-18 11:21:52,973 INFO read 23.682356357574463 save 0.0 write 1.1041908264160156
+2024-01-18 11:21:52,977 INFO Processing dataset/shards/librispeech/shard_librispeech_000000118.tar 118/282
+2024-01-18 11:21:53,222 INFO read 23.569052696228027 save 0.0 write 1.0889770984649658
+2024-01-18 11:21:53,226 INFO Processing dataset/shards/librispeech/shard_librispeech_000000119.tar 119/282
+2024-01-18 11:22:08,016 INFO read 19.803081512451172 save 0.0 write 1.0860648155212402
+2024-01-18 11:22:08,019 INFO Processing dataset/shards/librispeech/shard_librispeech_000000120.tar 120/282
+2024-01-18 11:22:08,304 INFO read 23.07713747024536 save 0.0 write 1.0228428840637207
+2024-01-18 11:22:08,307 INFO Processing dataset/shards/librispeech/shard_librispeech_000000121.tar 121/282
+2024-01-18 11:22:11,117 INFO read 21.746873140335083 save 0.0 write 1.0705595016479492
+2024-01-18 11:22:11,121 INFO Processing dataset/shards/librispeech/shard_librispeech_000000122.tar 122/282
+2024-01-18 11:22:11,293 INFO read 21.93417191505432 save 0.0 write 1.056746482849121
+2024-01-18 11:22:11,296 INFO Processing dataset/shards/librispeech/shard_librispeech_000000123.tar 123/282
+2024-01-18 11:22:11,874 INFO read 20.709491729736328 save 0.0 write 1.0884735584259033
+2024-01-18 11:22:11,878 INFO Processing dataset/shards/librispeech/shard_librispeech_000000124.tar 124/282
+2024-01-18 11:22:12,256 INFO read 20.428971767425537 save 0.0 write 1.0955748558044434
+2024-01-18 11:22:12,259 INFO Processing dataset/shards/librispeech/shard_librispeech_000000125.tar 125/282
+2024-01-18 11:22:13,197 INFO read 20.88442373275757 save 0.0 write 1.0461251735687256
+2024-01-18 11:22:13,200 INFO Processing dataset/shards/librispeech/shard_librispeech_000000126.tar 126/282
+2024-01-18 11:22:15,915 INFO read 21.834057331085205 save 0.0 write 1.1020803451538086
+2024-01-18 11:22:15,918 INFO Processing dataset/shards/librispeech/shard_librispeech_000000127.tar 127/282
+2024-01-18 11:22:16,581 INFO read 22.507121562957764 save 0.0 write 1.085998773574829
+2024-01-18 11:22:16,584 INFO Processing dataset/shards/librispeech/shard_librispeech_000000128.tar 128/282
+2024-01-18 11:22:19,186 INFO read 24.907963752746582 save 0.0 write 1.0428311824798584
+2024-01-18 11:22:19,190 INFO Processing dataset/shards/librispeech/shard_librispeech_000000129.tar 129/282
+2024-01-18 11:22:31,714 INFO read 22.327409267425537 save 0.0 write 1.0694725513458252
+2024-01-18 11:22:31,718 INFO Processing dataset/shards/librispeech/shard_librispeech_000000130.tar 130/282
+2024-01-18 11:22:32,931 INFO read 23.823599815368652 save 0.0 write 1.0783884525299072
+2024-01-18 11:22:32,934 INFO Processing dataset/shards/librispeech/shard_librispeech_000000131.tar 131/282
+2024-01-18 11:22:35,042 INFO read 22.67624521255493 save 0.0 write 1.0600318908691406
+2024-01-18 11:22:35,045 INFO Processing dataset/shards/librispeech/shard_librispeech_000000132.tar 132/282
+2024-01-18 11:22:35,353 INFO read 23.110713481903076 save 0.0 write 1.110776424407959
+2024-01-18 11:22:35,356 INFO Processing dataset/shards/librispeech/shard_librispeech_000000133.tar 133/282
+2024-01-18 11:22:35,632 INFO read 22.257871627807617 save 0.0 write 1.1048765182495117
+2024-01-18 11:22:35,635 INFO Processing dataset/shards/librispeech/shard_librispeech_000000134.tar 134/282
+2024-01-18 11:22:36,636 INFO read 23.71082377433777 save 0.0 write 1.0369603633880615
+2024-01-18 11:22:36,640 INFO Processing dataset/shards/librispeech/shard_librispeech_000000135.tar 135/282
+2024-01-18 11:22:38,648 INFO read 24.349223375320435 save 0.0 write 1.088566541671753
+2024-01-18 11:22:38,652 INFO Processing dataset/shards/librispeech/shard_librispeech_000000136.tar 136/282
+2024-01-18 11:22:40,410 INFO read 23.39160943031311 save 0.0 write 1.090566635131836
+2024-01-18 11:22:40,413 INFO Processing dataset/shards/librispeech/shard_librispeech_000000137.tar 137/282
+2024-01-18 11:22:41,876 INFO read 21.584805488586426 save 0.0 write 1.0915639400482178
+2024-01-18 11:22:41,880 INFO Processing dataset/shards/librispeech/shard_librispeech_000000138.tar 138/282
+2024-01-18 11:22:42,132 INFO read 24.489311695098877 save 0.0 write 1.0490453243255615
+2024-01-18 11:22:42,137 INFO Processing dataset/shards/librispeech/shard_librispeech_000000139.tar 139/282
+2024-01-18 11:22:52,431 INFO read 18.417470932006836 save 0.0 write 1.0698716640472412
+2024-01-18 11:22:52,434 INFO Processing dataset/shards/librispeech/shard_librispeech_000000140.tar 140/282
+2024-01-18 11:22:53,846 INFO read 17.390893697738647 save 0.0 write 1.088336706161499
+2024-01-18 11:22:53,850 INFO Processing dataset/shards/librispeech/shard_librispeech_000000141.tar 141/282
+2024-01-18 11:22:54,616 INFO read 21.840097665786743 save 0.0 write 1.0482962131500244
+2024-01-18 11:22:54,619 INFO Processing dataset/shards/librispeech/shard_librispeech_000000142.tar 142/282
+2024-01-18 11:22:54,835 INFO read 18.694021701812744 save 0.0 write 1.0870702266693115
+2024-01-18 11:22:54,838 INFO Processing dataset/shards/librispeech/shard_librispeech_000000143.tar 143/282
+2024-01-18 11:22:56,405 INFO read 19.692271947860718 save 0.0 write 1.0680713653564453
+2024-01-18 11:22:56,408 INFO Processing dataset/shards/librispeech/shard_librispeech_000000144.tar 144/282
+2024-01-18 11:22:56,800 INFO read 19.075038194656372 save 0.0 write 1.0740966796875
+2024-01-18 11:22:56,804 INFO Processing dataset/shards/librispeech/shard_librispeech_000000145.tar 145/282
+2024-01-18 11:22:59,416 INFO read 19.736571311950684 save 0.0 write 1.0184152126312256
+2024-01-18 11:22:59,421 INFO Processing dataset/shards/librispeech/shard_librispeech_000000146.tar 146/282
+2024-01-18 11:22:59,603 INFO read 18.11244535446167 save 0.0 write 1.0679316520690918
+2024-01-18 11:22:59,606 INFO Processing dataset/shards/librispeech/shard_librispeech_000000147.tar 147/282
+2024-01-18 11:23:01,708 INFO read 18.711978912353516 save 0.0 write 1.1060116291046143
+2024-01-18 11:23:01,711 INFO Processing dataset/shards/librispeech/shard_librispeech_000000148.tar 148/282
+2024-01-18 11:23:02,069 INFO read 18.852564573287964 save 0.0 write 1.0695242881774902
+2024-01-18 11:23:02,072 INFO Processing dataset/shards/librispeech/shard_librispeech_000000149.tar 149/282
+2024-01-18 11:23:11,248 INFO read 17.805177450180054 save 0.0 write 0.9995496273040771
+2024-01-18 11:23:11,252 INFO Processing dataset/shards/librispeech/shard_librispeech_000000150.tar 150/282
+2024-01-18 11:23:11,544 INFO read 16.592427253723145 save 0.0 write 1.0923371315002441
+2024-01-18 11:23:11,548 INFO Processing dataset/shards/librispeech/shard_librispeech_000000151.tar 151/282
+2024-01-18 11:23:13,373 INFO read 17.66967535018921 save 0.0 write 1.0739672183990479
+2024-01-18 11:23:13,376 INFO Processing dataset/shards/librispeech/shard_librispeech_000000152.tar 152/282
+2024-01-18 11:23:14,383 INFO read 18.406932592391968 save 0.0 write 1.1268270015716553
+2024-01-18 11:23:14,387 INFO Processing dataset/shards/librispeech/shard_librispeech_000000153.tar 153/282
+2024-01-18 11:23:15,436 INFO read 17.47224235534668 save 0.0 write 1.1486663818359375
+2024-01-18 11:23:15,439 INFO Processing dataset/shards/librispeech/shard_librispeech_000000154.tar 154/282
+2024-01-18 11:23:16,954 INFO read 19.460211277008057 save 0.0 write 1.075451135635376
+2024-01-18 11:23:16,957 INFO Processing dataset/shards/librispeech/shard_librispeech_000000155.tar 155/282
+2024-01-18 11:23:19,195 INFO read 18.733590126037598 save 0.0 write 1.0307667255401611
+2024-01-18 11:23:19,198 INFO Processing dataset/shards/librispeech/shard_librispeech_000000156.tar 156/282
+2024-01-18 11:23:20,155 INFO read 19.44037175178528 save 0.0 write 1.0970087051391602
+2024-01-18 11:23:20,159 INFO Processing dataset/shards/librispeech/shard_librispeech_000000157.tar 157/282
+2024-01-18 11:23:22,543 INFO read 19.762173891067505 save 0.0 write 1.059920072555542
+2024-01-18 11:23:22,546 INFO Processing dataset/shards/librispeech/shard_librispeech_000000158.tar 158/282
+2024-01-18 11:23:23,194 INFO read 20.078755140304565 save 0.0 write 1.0328543186187744
+2024-01-18 11:23:23,198 INFO Processing dataset/shards/librispeech/shard_librispeech_000000159.tar 159/282
+2024-01-18 11:23:33,985 INFO read 21.3177547454834 save 0.0 write 1.1089050769805908
+2024-01-18 11:23:33,988 INFO Processing dataset/shards/librispeech/shard_librispeech_000000160.tar 160/282
+2024-01-18 11:23:35,155 INFO read 22.83938193321228 save 0.0 write 1.0539801120758057
+2024-01-18 11:23:35,158 INFO Processing dataset/shards/librispeech/shard_librispeech_000000161.tar 161/282
+2024-01-18 11:23:37,880 INFO read 22.3980073928833 save 0.0 write 1.085188627243042
+2024-01-18 11:23:37,883 INFO Processing dataset/shards/librispeech/shard_librispeech_000000162.tar 162/282
+2024-01-18 11:23:37,920 INFO read 23.445482969284058 save 0.0 write 1.0879273414611816
+2024-01-18 11:23:37,923 INFO Processing dataset/shards/librispeech/shard_librispeech_000000163.tar 163/282
+2024-01-18 11:23:40,832 INFO read 24.28059983253479 save 0.0 write 1.1007850170135498
+2024-01-18 11:23:40,836 INFO Processing dataset/shards/librispeech/shard_librispeech_000000164.tar 164/282
+2024-01-18 11:23:41,066 INFO read 23.022396564483643 save 0.0 write 1.0759365558624268
+2024-01-18 11:23:41,069 INFO Processing dataset/shards/librispeech/shard_librispeech_000000165.tar 165/282
+2024-01-18 11:23:44,336 INFO read 24.03581953048706 save 0.0 write 1.0924365520477295
+2024-01-18 11:23:44,340 INFO Processing dataset/shards/librispeech/shard_librispeech_000000166.tar 166/282
+2024-01-18 11:23:44,395 INFO read 23.188917636871338 save 0.0 write 1.0376653671264648
+2024-01-18 11:23:44,398 INFO Processing dataset/shards/librispeech/shard_librispeech_000000167.tar 167/282
+2024-01-18 11:23:46,328 INFO read 22.03001308441162 save 0.0 write 1.0905330181121826
+2024-01-18 11:23:46,331 INFO Processing dataset/shards/librispeech/shard_librispeech_000000168.tar 168/282
+2024-01-18 11:23:48,575 INFO read 24.969844102859497 save 0.0 write 1.0488739013671875
+2024-01-18 11:23:48,580 INFO Processing dataset/shards/librispeech/shard_librispeech_000000169.tar 169/282
+2024-01-18 11:23:54,164 INFO read 17.875721216201782 save 0.0 write 1.1195030212402344
+2024-01-18 11:23:54,167 INFO Processing dataset/shards/librispeech/shard_librispeech_000000170.tar 170/282
+2024-01-18 11:23:55,325 INFO read 20.27601957321167 save 0.0 write 1.0507314205169678
+2024-01-18 11:23:55,328 INFO Processing dataset/shards/librispeech/shard_librispeech_000000171.tar 171/282
+2024-01-18 11:23:58,899 INFO read 19.847229719161987 save 0.0 write 1.1176927089691162
+2024-01-18 11:23:58,903 INFO Processing dataset/shards/librispeech/shard_librispeech_000000172.tar 172/282
+2024-01-18 11:24:00,543 INFO read 21.62122416496277 save 0.0 write 1.0284044742584229
+2024-01-18 11:24:00,546 INFO Processing dataset/shards/librispeech/shard_librispeech_000000173.tar 173/282
+2024-01-18 11:24:00,879 INFO read 18.945234060287476 save 0.0 write 1.087864875793457
+2024-01-18 11:24:00,882 INFO Processing dataset/shards/librispeech/shard_librispeech_000000174.tar 174/282
+2024-01-18 11:24:01,367 INFO read 19.19233465194702 save 0.0 write 1.0954787731170654
+2024-01-18 11:24:01,370 INFO Processing dataset/shards/librispeech/shard_librispeech_000000175.tar 175/282
+2024-01-18 11:24:03,296 INFO read 17.846505880355835 save 0.0 write 1.0997357368469238
+2024-01-18 11:24:03,300 INFO Processing dataset/shards/librispeech/shard_librispeech_000000176.tar 176/282
+2024-01-18 11:24:05,091 INFO read 19.704187870025635 save 0.0 write 0.9793789386749268
+2024-01-18 11:24:05,094 INFO Processing dataset/shards/librispeech/shard_librispeech_000000177.tar 177/282
+2024-01-18 11:24:05,515 INFO read 18.101665258407593 save 0.0 write 1.0709755420684814
+2024-01-18 11:24:05,519 INFO Processing dataset/shards/librispeech/shard_librispeech_000000178.tar 178/282
+2024-01-18 11:24:08,067 INFO read 18.364407062530518 save 0.0 write 1.1122777462005615
+2024-01-18 11:24:08,070 INFO Processing dataset/shards/librispeech/shard_librispeech_000000179.tar 179/282
+2024-01-18 11:24:12,744 INFO read 17.501566648483276 save 0.0 write 1.0654292106628418
+2024-01-18 11:24:12,747 INFO Processing dataset/shards/librispeech/shard_librispeech_000000180.tar 180/282
+2024-01-18 11:24:17,721 INFO read 17.66739535331726 save 0.0 write 1.1393067836761475
+2024-01-18 11:24:17,723 INFO Processing dataset/shards/librispeech/shard_librispeech_000000181.tar 181/282
+2024-01-18 11:24:18,184 INFO read 21.827191591262817 save 0.0 write 1.018763542175293
+2024-01-18 11:24:18,187 INFO Processing dataset/shards/librispeech/shard_librispeech_000000182.tar 182/282
+2024-01-18 11:24:18,777 INFO read 16.778162956237793 save 0.0 write 1.1064362525939941
+2024-01-18 11:24:18,780 INFO Processing dataset/shards/librispeech/shard_librispeech_000000183.tar 183/282
+2024-01-18 11:24:19,562 INFO read 17.89982318878174 save 0.0 write 1.1063199043273926
+2024-01-18 11:24:19,565 INFO Processing dataset/shards/librispeech/shard_librispeech_000000184.tar 184/282
+2024-01-18 11:24:22,414 INFO read 17.97606110572815 save 0.0 write 1.1274349689483643
+2024-01-18 11:24:22,417 INFO Processing dataset/shards/librispeech/shard_librispeech_000000185.tar 185/282
+2024-01-18 11:24:23,109 INFO read 20.697744846343994 save 0.0 write 1.0291776657104492
+2024-01-18 11:24:23,113 INFO Processing dataset/shards/librispeech/shard_librispeech_000000186.tar 186/282
+2024-01-18 11:24:25,751 INFO read 19.156224966049194 save 0.0 write 1.066744327545166
+2024-01-18 11:24:25,754 INFO Processing dataset/shards/librispeech/shard_librispeech_000000187.tar 187/282
+2024-01-18 11:24:26,371 INFO read 20.071792364120483 save 0.0 write 1.1936731338500977
+2024-01-18 11:24:26,375 INFO Processing dataset/shards/librispeech/shard_librispeech_000000188.tar 188/282
+2024-01-18 11:24:30,013 INFO read 20.853163480758667 save 0.0 write 1.0800127983093262
+2024-01-18 11:24:30,016 INFO Processing dataset/shards/librispeech/shard_librispeech_000000189.tar 189/282
+2024-01-18 11:24:33,601 INFO read 19.74070453643799 save 0.0 write 1.1037788391113281
+2024-01-18 11:24:33,604 INFO Processing dataset/shards/librispeech/shard_librispeech_000000190.tar 190/282
+2024-01-18 11:24:40,971 INFO read 21.065995693206787 save 0.0 write 1.1141834259033203
+2024-01-18 11:24:40,975 INFO Processing dataset/shards/librispeech/shard_librispeech_000000191.tar 191/282
+2024-01-18 11:24:41,113 INFO read 22.18144130706787 save 0.0 write 1.197312593460083
+2024-01-18 11:24:41,116 INFO Processing dataset/shards/librispeech/shard_librispeech_000000192.tar 192/282
+2024-01-18 11:24:41,525 INFO read 22.238667964935303 save 0.0 write 1.088697910308838
+2024-01-18 11:24:41,528 INFO Processing dataset/shards/librispeech/shard_librispeech_000000193.tar 193/282
+2024-01-18 11:24:42,132 INFO read 21.465800285339355 save 0.0 write 1.089900016784668
+2024-01-18 11:24:42,135 INFO Processing dataset/shards/librispeech/shard_librispeech_000000194.tar 194/282
+2024-01-18 11:24:45,111 INFO read 21.644495725631714 save 0.0 write 1.0394866466522217
+2024-01-18 11:24:45,115 INFO Processing dataset/shards/librispeech/shard_librispeech_000000195.tar 195/282
+2024-01-18 11:24:45,860 INFO read 21.609639883041382 save 0.0 write 1.1264557838439941
+2024-01-18 11:24:45,863 INFO Processing dataset/shards/librispeech/shard_librispeech_000000196.tar 196/282
+2024-01-18 11:24:48,386 INFO read 21.530969858169556 save 0.0 write 1.0908668041229248
+2024-01-18 11:24:48,390 INFO Processing dataset/shards/librispeech/shard_librispeech_000000197.tar 197/282
+2024-01-18 11:24:50,631 INFO read 23.17566752433777 save 0.0 write 1.0692942142486572
+2024-01-18 11:24:50,634 INFO Processing dataset/shards/librispeech/shard_librispeech_000000198.tar 198/282
+2024-01-18 11:24:52,226 INFO read 21.011114835739136 save 0.0 write 1.1876342296600342
+2024-01-18 11:24:52,229 INFO Processing dataset/shards/librispeech/shard_librispeech_000000199.tar 199/282
+2024-01-18 11:24:56,816 INFO read 22.103254556655884 save 0.0 write 1.0994644165039062
+2024-01-18 11:24:56,820 INFO Processing dataset/shards/librispeech/shard_librispeech_000000200.tar 200/282
+2024-01-18 11:25:04,319 INFO read 21.03829073905945 save 0.0 write 1.1351773738861084
+2024-01-18 11:25:04,322 INFO Processing dataset/shards/librispeech/shard_librispeech_000000201.tar 201/282
+2024-01-18 11:25:04,501 INFO read 21.911786317825317 save 0.0 write 1.051436424255371
+2024-01-18 11:25:04,504 INFO Processing dataset/shards/librispeech/shard_librispeech_000000202.tar 202/282
+2024-01-18 11:25:04,633 INFO read 22.583974361419678 save 0.0 write 1.0637848377227783
+2024-01-18 11:25:04,636 INFO Processing dataset/shards/librispeech/shard_librispeech_000000203.tar 203/282
+2024-01-18 11:25:05,636 INFO read 23.421176195144653 save 0.0 write 1.0873863697052002
+2024-01-18 11:25:05,640 INFO Processing dataset/shards/librispeech/shard_librispeech_000000204.tar 204/282
+2024-01-18 11:25:07,699 INFO read 20.71499276161194 save 0.0 write 1.1102416515350342
+2024-01-18 11:25:07,702 INFO Processing dataset/shards/librispeech/shard_librispeech_000000205.tar 205/282
+2024-01-18 11:25:08,509 INFO read 22.347936391830444 save 0.0 write 1.0367445945739746
+2024-01-18 11:25:08,512 INFO Processing dataset/shards/librispeech/shard_librispeech_000000206.tar 206/282
+2024-01-18 11:25:09,994 INFO read 20.509286165237427 save 0.0 write 1.0853064060211182
+2024-01-18 11:25:09,997 INFO Processing dataset/shards/librispeech/shard_librispeech_000000207.tar 207/282
+2024-01-18 11:25:10,135 INFO read 18.40741539001465 save 0.0 write 1.0843839645385742
+2024-01-18 11:25:10,138 INFO Processing dataset/shards/librispeech/shard_librispeech_000000208.tar 208/282
+2024-01-18 11:25:11,790 INFO read 18.457772493362427 save 0.0 write 1.0925335884094238
+2024-01-18 11:25:11,793 INFO Processing dataset/shards/librispeech/shard_librispeech_000000209.tar 209/282
+2024-01-18 11:25:16,605 INFO read 18.665130376815796 save 0.0 write 1.10957670211792
+2024-01-18 11:25:16,608 INFO Processing dataset/shards/librispeech/shard_librispeech_000000210.tar 210/282
+2024-01-18 11:25:24,739 INFO read 19.036747694015503 save 0.0 write 1.0557184219360352
+2024-01-18 11:25:24,742 INFO Processing dataset/shards/librispeech/shard_librispeech_000000211.tar 211/282
+2024-01-18 11:25:24,775 INFO read 19.303272247314453 save 0.0 write 1.1399285793304443
+2024-01-18 11:25:24,778 INFO Processing dataset/shards/librispeech/shard_librispeech_000000212.tar 212/282
+2024-01-18 11:25:25,212 INFO read 19.630647659301758 save 0.0 write 1.067455530166626
+2024-01-18 11:25:25,215 INFO Processing dataset/shards/librispeech/shard_librispeech_000000213.tar 213/282
+2024-01-18 11:25:26,256 INFO read 19.551695346832275 save 0.0 write 1.0549185276031494
+2024-01-18 11:25:26,259 INFO Processing dataset/shards/librispeech/shard_librispeech_000000214.tar 214/282
+2024-01-18 11:25:26,973 INFO read 18.184067964553833 save 0.0 write 1.0769891738891602
+2024-01-18 11:25:26,976 INFO Processing dataset/shards/librispeech/shard_librispeech_000000215.tar 215/282
+2024-01-18 11:25:30,989 INFO read 19.924687385559082 save 0.0 write 1.0569267272949219
+2024-01-18 11:25:30,992 INFO Processing dataset/shards/librispeech/shard_librispeech_000000216.tar 216/282
+2024-01-18 11:25:31,291 INFO read 21.63407325744629 save 0.0 write 1.134730577468872
+2024-01-18 11:25:31,294 INFO Processing dataset/shards/librispeech/shard_librispeech_000000217.tar 217/282
+2024-01-18 11:25:32,039 INFO read 20.844600677490234 save 0.0 write 1.0465278625488281
+2024-01-18 11:25:32,042 INFO Processing dataset/shards/librispeech/shard_librispeech_000000218.tar 218/282
+2024-01-18 11:25:33,213 INFO read 20.335846662521362 save 0.0 write 1.0751824378967285
+2024-01-18 11:25:33,216 INFO Processing dataset/shards/librispeech/shard_librispeech_000000219.tar 219/282
+2024-01-18 11:25:37,045 INFO read 19.332632303237915 save 0.0 write 1.0931742191314697
+2024-01-18 11:25:37,049 INFO Processing dataset/shards/librispeech/shard_librispeech_000000220.tar 220/282
+2024-01-18 11:25:44,641 INFO read 18.81276774406433 save 0.0 write 1.0401527881622314
+2024-01-18 11:25:44,644 INFO Processing dataset/shards/librispeech/shard_librispeech_000000221.tar 221/282
+2024-01-18 11:25:44,707 INFO read 18.893940925598145 save 0.0 write 1.061030626296997
+2024-01-18 11:25:44,710 INFO Processing dataset/shards/librispeech/shard_librispeech_000000222.tar 222/282
+2024-01-18 11:25:46,291 INFO read 18.98123836517334 save 0.0 write 1.0407459735870361
+2024-01-18 11:25:46,294 INFO Processing dataset/shards/librispeech/shard_librispeech_000000223.tar 223/282
+2024-01-18 11:25:46,523 INFO read 20.24071717262268 save 0.0 write 1.0565154552459717
+2024-01-18 11:25:46,527 INFO Processing dataset/shards/librispeech/shard_librispeech_000000224.tar 224/282
+2024-01-18 11:25:48,138 INFO read 20.097014904022217 save 0.0 write 1.0546996593475342
+2024-01-18 11:25:48,141 INFO Processing dataset/shards/librispeech/shard_librispeech_000000225.tar 225/282
+2024-01-18 11:25:50,127 INFO read 18.050540924072266 save 0.0 write 1.0741608142852783
+2024-01-18 11:25:50,131 INFO Processing dataset/shards/librispeech/shard_librispeech_000000226.tar 226/282
+2024-01-18 11:25:50,754 INFO read 18.339131593704224 save 0.0 write 1.1106970310211182
+2024-01-18 11:25:50,758 INFO Processing dataset/shards/librispeech/shard_librispeech_000000227.tar 227/282
+2024-01-18 11:25:53,040 INFO read 19.939456462860107 save 0.0 write 1.0485239028930664
+2024-01-18 11:25:53,043 INFO Processing dataset/shards/librispeech/shard_librispeech_000000228.tar 228/282
+2024-01-18 11:25:54,470 INFO read 20.20061182975769 save 0.0 write 1.042907476425171
+2024-01-18 11:25:54,473 INFO Processing dataset/shards/librispeech/shard_librispeech_000000229.tar 229/282
+2024-01-18 11:25:56,747 INFO read 18.596765756607056 save 0.0 write 1.0915088653564453
+2024-01-18 11:25:56,751 INFO Processing dataset/shards/librispeech/shard_librispeech_000000230.tar 230/282
+2024-01-18 11:26:04,492 INFO read 18.730287075042725 save 0.0 write 1.1067206859588623
+2024-01-18 11:26:04,495 INFO Processing dataset/shards/librispeech/shard_librispeech_000000231.tar 231/282
+2024-01-18 11:26:06,082 INFO read 20.31806230545044 save 0.0 write 1.0438132286071777
+2024-01-18 11:26:06,085 INFO Processing dataset/shards/librispeech/shard_librispeech_000000232.tar 232/282
+2024-01-18 11:26:07,421 INFO read 20.036861181259155 save 0.0 write 1.0790131092071533
+2024-01-18 11:26:07,424 INFO Processing dataset/shards/librispeech/shard_librispeech_000000233.tar 233/282
+2024-01-18 11:26:08,078 INFO read 20.455535650253296 save 0.0 write 1.0853526592254639
+2024-01-18 11:26:08,081 INFO Processing dataset/shards/librispeech/shard_librispeech_000000234.tar 234/282
+2024-01-18 11:26:08,160 INFO read 18.948500156402588 save 0.0 write 1.0607292652130127
+2024-01-18 11:26:08,163 INFO Processing dataset/shards/librispeech/shard_librispeech_000000235.tar 235/282
+2024-01-18 11:26:08,918 INFO read 17.658931732177734 save 0.0 write 1.1179442405700684
+2024-01-18 11:26:08,921 INFO Processing dataset/shards/librispeech/shard_librispeech_000000236.tar 236/282
+2024-01-18 11:26:09,660 INFO read 17.803669452667236 save 0.0 write 1.0885376930236816
+2024-01-18 11:26:09,663 INFO Processing dataset/shards/librispeech/shard_librispeech_000000237.tar 237/282
+2024-01-18 11:26:12,744 INFO read 18.63771390914917 save 0.0 write 1.0529093742370605
+2024-01-18 11:26:12,748 INFO Processing dataset/shards/librispeech/shard_librispeech_000000238.tar 238/282
+2024-01-18 11:26:13,258 INFO read 17.712937593460083 save 0.0 write 1.06197190284729
+2024-01-18 11:26:13,263 INFO Processing dataset/shards/librispeech/shard_librispeech_000000239.tar 239/282
+2024-01-18 11:26:18,045 INFO read 20.228761196136475 save 0.0 write 1.055804967880249
+2024-01-18 11:26:18,048 INFO Processing dataset/shards/librispeech/shard_librispeech_000000240.tar 240/282
+2024-01-18 11:26:25,244 INFO read 19.682536602020264 save 0.0 write 1.0557222366333008
+2024-01-18 11:26:25,247 INFO Processing dataset/shards/librispeech/shard_librispeech_000000241.tar 241/282
+2024-01-18 11:26:27,277 INFO read 20.07559323310852 save 0.0 write 1.1061999797821045
+2024-01-18 11:26:27,281 INFO Processing dataset/shards/librispeech/shard_librispeech_000000242.tar 242/282
+2024-01-18 11:26:27,878 INFO read 18.68403196334839 save 0.0 write 1.1039495468139648
+2024-01-18 11:26:27,881 INFO Processing dataset/shards/librispeech/shard_librispeech_000000243.tar 243/282
+2024-01-18 11:26:27,886 INFO read 18.619398832321167 save 0.0 write 1.0926904678344727
+2024-01-18 11:26:27,889 INFO Processing dataset/shards/librispeech/shard_librispeech_000000244.tar 244/282
+2024-01-18 11:26:28,563 INFO read 20.048579692840576 save 0.0 write 1.0804731845855713
+2024-01-18 11:26:28,566 INFO Processing dataset/shards/librispeech/shard_librispeech_000000245.tar 245/282
+2024-01-18 11:26:29,909 INFO read 19.910247564315796 save 0.0 write 1.0686287879943848
+2024-01-18 11:26:29,912 INFO Processing dataset/shards/librispeech/shard_librispeech_000000246.tar 246/282
+2024-01-18 11:26:31,168 INFO read 20.45321798324585 save 0.0 write 1.0424597263336182
+2024-01-18 11:26:31,172 INFO Processing dataset/shards/librispeech/shard_librispeech_000000247.tar 247/282
+2024-01-18 11:26:32,541 INFO read 18.717763423919678 save 0.0 write 1.065321922302246
+2024-01-18 11:26:32,543 INFO Processing dataset/shards/librispeech/shard_librispeech_000000248.tar 248/282
+2024-01-18 11:26:33,184 INFO read 18.843926906585693 save 0.0 write 1.066749095916748
+2024-01-18 11:26:33,188 INFO Processing dataset/shards/librispeech/shard_librispeech_000000249.tar 249/282
+2024-01-18 11:26:38,539 INFO read 19.461637020111084 save 0.0 write 1.0201351642608643
+2024-01-18 11:26:38,542 INFO Processing dataset/shards/librispeech/shard_librispeech_000000250.tar 250/282
+2024-01-18 11:26:44,754 INFO read 18.42740249633789 save 0.0 write 1.0706024169921875
+2024-01-18 11:26:44,757 INFO Processing dataset/shards/librispeech/shard_librispeech_000000251.tar 251/282
+2024-01-18 11:26:46,957 INFO read 18.586851835250854 save 0.0 write 1.0797510147094727
+2024-01-18 11:26:46,960 INFO Processing dataset/shards/librispeech/shard_librispeech_000000252.tar 252/282
+2024-01-18 11:26:48,185 INFO read 19.15730309486389 save 0.0 write 1.1351041793823242
+2024-01-18 11:26:48,189 INFO Processing dataset/shards/librispeech/shard_librispeech_000000253.tar 253/282
+2024-01-18 11:26:48,253 INFO read 18.617732763290405 save 0.0 write 1.0587468147277832
+2024-01-18 11:26:48,257 INFO Processing dataset/shards/librispeech/shard_librispeech_000000254.tar 254/282
+2024-01-18 11:26:48,927 INFO read 17.848076343536377 save 0.0 write 1.1564650535583496
+2024-01-18 11:26:48,930 INFO Processing dataset/shards/librispeech/shard_librispeech_000000255.tar 255/282
+2024-01-18 11:26:49,142 INFO read 20.200538158416748 save 0.0 write 1.0429365634918213
+2024-01-18 11:26:49,145 INFO Processing dataset/shards/librispeech/shard_librispeech_000000256.tar 256/282
+2024-01-18 11:26:50,227 INFO read 18.002459287643433 save 0.0 write 1.042858362197876
+2024-01-18 11:26:50,229 INFO Processing dataset/shards/librispeech/shard_librispeech_000000257.tar 257/282
+2024-01-18 11:26:51,907 INFO read 18.281838178634644 save 0.0 write 1.072357177734375
+2024-01-18 11:26:51,910 INFO Processing dataset/shards/librispeech/shard_librispeech_000000258.tar 258/282
+2024-01-18 11:26:54,572 INFO read 20.343260526657104 save 0.0 write 1.0310397148132324
+2024-01-18 11:26:54,575 INFO Processing dataset/shards/librispeech/shard_librispeech_000000259.tar 259/282
+2024-01-18 11:26:58,828 INFO read 19.22599172592163 save 0.0 write 1.04941725730896
+2024-01-18 11:26:58,831 INFO Processing dataset/shards/librispeech/shard_librispeech_000000260.tar 260/282
+2024-01-18 11:27:04,076 INFO read 18.226842880249023 save 0.0 write 1.0822129249572754
+2024-01-18 11:27:04,078 INFO Processing dataset/shards/librispeech/shard_librispeech_000000261.tar 261/282
+2024-01-18 11:27:05,449 INFO read 16.153496980667114 save 0.0 write 1.096097707748413
+2024-01-18 11:27:05,453 INFO Processing dataset/shards/librispeech/shard_librispeech_000000262.tar 262/282
+2024-01-18 11:27:06,737 INFO read 18.68943452835083 save 0.0 write 1.077711582183838
+2024-01-18 11:27:06,740 INFO Processing dataset/shards/librispeech/shard_librispeech_000000263.tar 263/282
+2024-01-18 11:27:07,000 INFO read 17.649510622024536 save 0.0 write 1.0836687088012695
+2024-01-18 11:27:07,003 INFO Processing dataset/shards/librispeech/shard_librispeech_000000264.tar 264/282
+2024-01-18 11:27:07,549 INFO read 17.297784566879272 save 0.0 write 1.0960288047790527
+2024-01-18 11:27:07,551 INFO Processing dataset/shards/librispeech/shard_librispeech_000000265.tar 265/282
+2024-01-18 11:27:08,145 INFO read 18.190862894058228 save 0.0 write 1.0138442516326904
+2024-01-18 11:27:08,147 INFO Processing dataset/shards/librispeech/shard_librispeech_000000266.tar 266/282
+2024-01-18 11:27:08,567 INFO read 17.303468942642212 save 0.0 write 1.0246593952178955
+2024-01-18 11:27:08,571 INFO Processing dataset/shards/librispeech/shard_librispeech_000000267.tar 267/282
+2024-01-18 11:27:12,256 INFO read 19.31333565711975 save 0.0 write 1.0223217010498047
+2024-01-18 11:27:12,259 INFO Processing dataset/shards/librispeech/shard_librispeech_000000268.tar 268/282
+2024-01-18 11:27:14,391 INFO read 18.77581763267517 save 0.0 write 1.0296320915222168
+2024-01-18 11:27:14,395 INFO Processing dataset/shards/librispeech/shard_librispeech_000000269.tar 269/282
+2024-01-18 11:27:18,700 INFO read 18.826732635498047 save 0.0 write 1.0325682163238525
+2024-01-18 11:27:18,703 INFO Processing dataset/shards/librispeech/shard_librispeech_000000270.tar 270/282
+2024-01-18 11:27:24,330 INFO read 19.141153812408447 save 0.0 write 1.1007559299468994
+2024-01-18 11:27:24,333 INFO Processing dataset/shards/librispeech/shard_librispeech_000000271.tar 271/282
+2024-01-18 11:27:24,611 INFO read 18.109318017959595 save 0.0 write 1.039151906967163
+2024-01-18 11:27:24,614 INFO Processing dataset/shards/librispeech/shard_librispeech_000000272.tar 272/282
+2024-01-18 11:27:26,148 INFO read 18.40572714805603 save 0.0 write 0.9935593605041504
+2024-01-18 11:27:26,152 INFO Processing dataset/shards/librispeech/shard_librispeech_000000273.tar 273/282
+2024-01-18 11:27:26,532 INFO read 17.32255506515503 save 0.0 write 1.0532622337341309
+2024-01-18 11:27:26,536 INFO Processing dataset/shards/librispeech/shard_librispeech_000000274.tar 274/282
+2024-01-18 11:27:28,475 INFO read 18.832910299301147 save 0.0 write 1.0617270469665527
+2024-01-18 11:27:28,478 INFO Processing dataset/shards/librispeech/shard_librispeech_000000275.tar 275/282
+2024-01-18 11:27:28,575 INFO read 19.996665954589844 save 0.0 write 1.0174834728240967
+2024-01-18 11:27:28,578 INFO Processing dataset/shards/librispeech/shard_librispeech_000000276.tar 276/282
+2024-01-18 11:27:28,757 INFO read 20.729689359664917 save 0.0 write 1.01491379737854
+2024-01-18 11:27:28,760 INFO Processing dataset/shards/librispeech/shard_librispeech_000000277.tar 277/282
+2024-01-18 11:27:33,276 INFO read 20.007532596588135 save 0.0 write 0.999443769454956
+2024-01-18 11:27:33,278 INFO Processing dataset/shards/librispeech/shard_librispeech_000000278.tar 278/282
+2024-01-18 11:27:33,896 INFO read 18.468860387802124 save 0.0 write 1.0221476554870605
+2024-01-18 11:27:33,899 INFO Processing dataset/shards/librispeech/shard_librispeech_000000279.tar 279/282
+2024-01-18 11:27:37,958 INFO read 18.234943389892578 save 0.0 write 1.010551929473877
+2024-01-18 11:27:37,960 INFO Processing dataset/shards/librispeech/shard_librispeech_000000280.tar 280/282
+2024-01-18 11:27:42,391 INFO read 16.749842882156372 save 0.0 write 1.0170631408691406
+2024-01-18 11:27:42,394 INFO Processing dataset/shards/librispeech/shard_librispeech_000000281.tar 281/282
+2024-01-18 11:27:42,494 INFO read 17.076401233673096 save 0.0 write 1.0757110118865967
+2024-01-18 11:27:44,304 INFO read 16.698686122894287 save 0.0 write 1.0593578815460205
+2024-01-18 11:27:45,138 INFO read 17.933372259140015 save 0.0 write 1.0435466766357422
+2024-01-18 11:27:46,570 INFO read 3.94929575920105 save 0.0 write 0.22409701347351074
+2024-01-18 11:27:46,694 INFO read 17.098824501037598 save 0.0 write 1.1073544025421143
+2024-01-18 11:27:47,077 INFO read 17.432536840438843 save 0.0 write 1.0571258068084717
+2024-01-18 11:27:47,697 INFO read 17.885421752929688 save 0.0 write 1.0415334701538086
+2024-01-18 11:27:49,674 INFO read 15.43748164176941 save 0.0 write 0.9484612941741943
+2024-01-18 11:27:49,701 INFO read 14.822312116622925 save 0.0 write 0.9695014953613281
+2024-01-18 11:27:50,841 INFO read 11.882134914398193 save 0.0 write 0.9896833896636963
