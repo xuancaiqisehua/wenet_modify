@@ -1,0 +1,56 @@
+/data/gepenghua/software/anaconda3/envs/wenet10/lib/python3.8/site-packages/torch/_jit_internal.py:650: FutureWarning: ignore(True) has been deprecated. TorchScript will now drop the function call on compilation. Use torch.jit.unused now. {}
+  warnings.warn("ignore(True) has been deprecated. TorchScript will now drop the function "
+2023-05-08 20:51:57,614 INFO Checkpoint: loading from checkpoint exp/paraformer/avg_20.pt for CPU
+Failed to import k2 and icefall.         Notice that they are necessary for         hlg_onebest/hlg_rescore decoding and LF-MMI training
+Namespace(attn_weight=0.0, batch_size=1, beam_size=10, bpe_model=None, checkpoint='exp/paraformer/avg_20.pt', config='exp/paraformer/train.yaml', connect_symbol='', ctc_weight=0.5, data_type='format', decoder_scale=0.0, decoding_chunk_size=-1, dict='data/dict/lang_char.txt', gpu=-1, hlg='', lm_scale=0.0, mode='paraformer_beam_search', non_lang_syms=None, num_decoding_left_chunks=-1, override_config=[], penalty=0.0, r_decoder_scale=0.0, result_file='exp/paraformer/test_paraformer_beam_search/text', reverse_weight=0.0, search_ctc_weight=1.0, search_transducer_weight=0.0, simulate_streaming=True, test_data='data/test/format.lst', transducer_weight=0.0, word='')
+======encoder_mask====== torch.Size([1, 1, 103]) tensor([[[True, True, True, True, True, True, True, True, True, True, True,
+          True, True, True, True, True, True, True, True, True, True, True,
+          True, True, True, True, True, True, True, True, True, True, True,
+          True, True, True, True, True, True, True, True, True, True, True,
+          True, True, True, True, True, True, True, True, True, True, True,
+          True, True, True, True, True, True, True, True, True, True, True,
+          True, True, True, True, True, True, True, True, True, True, True,
+          True, True, True, True, True, True, True, True, True, True, True,
+          True, True, True, True, True, True, True, True, True, True, True,
+          True, True, True, True]]])
+======pre_token_length====== tensor([12.9978])
+======pre_acoustic_embeds====== torch.Size([1, 13, 256]) tensor([[[ 0.1175,  0.4405,  0.8042,  ..., -0.9489,  0.7183,  0.3316],
+         [ 0.0464, -0.3437, -1.2358,  ..., -0.4035, -0.0302,  0.4753],
+         [-0.0731, -0.3283, -0.5075,  ...,  0.9008, -0.3626,  0.5819],
+         ...,
+         [ 0.0448,  1.0366,  0.8721,  ...,  1.4080,  1.0124,  0.7243],
+         [-0.0207, -0.2538, -0.2638,  ...,  0.5247, -0.3285,  0.1720],
+         [ 0.0000,  0.0000,  0.0000,  ...,  0.0000,  0.0000,  0.0000]]])
+ decoder_out before log_softmax torch.Size([1, 13, 4233]) tensor([[[ 0.5855,  0.5855,  1.0348,  ...,  0.8368, -1.0984,  0.5855],
+         [ 0.5735,  0.5735,  0.9644,  ...,  1.8689, -0.4549,  0.5734],
+         [ 0.3006,  0.3006,  0.2952,  ..., -0.2726, -0.3831,  0.3005],
+         ...,
+         [ 0.1397,  0.1397,  0.1930,  ...,  0.2781,  0.1352,  0.1396],
+         [ 0.5080,  0.5080,  0.4789,  ..., -0.3370, -0.8641,  0.5079],
+         [ 0.5801,  0.5801,  0.8375,  ..., -0.5042, -1.2074,  0.5800]]])
+ decoder_out before log_softmax torch.Size([1, 13, 4233]) tensor([[[-11.1614, -11.1614, -10.7121,  ..., -10.9101, -12.8453, -11.1614],
+         [-10.9910, -10.9910, -10.6001,  ...,  -9.6956, -12.0194, -10.9911],
+         [-11.0428, -11.0427, -11.0481,  ..., -11.6160, -11.7264, -11.0428],
+         ...,
+         [-10.8325, -10.8324, -10.7792,  ..., -10.6940, -10.8369, -10.8326],
+         [-11.0866, -11.0865, -11.1157,  ..., -11.9316, -12.4587, -11.0866],
+         [-10.9489, -10.9488, -10.6914,  ..., -12.0331, -12.7363, -10.9489]]])
+====decoder=== tensor([[[-11.1614, -11.1614, -10.7121,  ..., -10.9101, -12.8453, -11.1614],
+         [-10.9910, -10.9910, -10.6001,  ...,  -9.6956, -12.0194, -10.9911],
+         [-11.0428, -11.0427, -11.0481,  ..., -11.6160, -11.7264, -11.0428],
+         ...,
+         [-10.8325, -10.8324, -10.7792,  ..., -10.6940, -10.8369, -10.8326],
+         [-11.0866, -11.0865, -11.1157,  ..., -11.9316, -12.4587, -11.0866],
+         [-10.9489, -10.9488, -10.6914,  ..., -12.0331, -12.7363, -10.9489]]])
+====am_scores==== tensor([[-11.1614, -11.1614, -10.7121,  ..., -10.9101, -12.8453, -11.1614],
+        [-10.9910, -10.9910, -10.6001,  ...,  -9.6956, -12.0194, -10.9911],
+        [-11.0428, -11.0427, -11.0481,  ..., -11.6160, -11.7264, -11.0428],
+        ...,
+        [-10.8325, -10.8324, -10.7792,  ..., -10.6940, -10.8369, -10.8326],
+        [-11.0866, -11.0865, -11.1157,  ..., -11.9316, -12.4587, -11.0866],
+        [-10.9489, -10.9488, -10.6914,  ..., -12.0331, -12.7363, -10.9489]])
+====yseq==== tensor([2776, 4095,  418, 3354, 1432, 3694, 1331, 1180, 3084, 4076,  582, 2558,
+        1718])
+====score==== tensor(-1.7620)
+nbest_hyps [Hypothesis(yseq=tensor([2776, 4095,  418, 3354, 1432, 3694, 1331, 1180, 3084, 4076,  582, 2558,
+        1718]), score=tensor(-1.7620), scores={}, states={})]
