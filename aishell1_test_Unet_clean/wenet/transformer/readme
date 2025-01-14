@@ -1,0 +1,7 @@
+encoderV3.py : 正在修改,添加子采样,输入输出之间添加线形层,输入前映射成384,conformer后映射成下一层的输入
+encoderV1.py : 可以运行，每一层中间有一层变化的位置embedding,但是缺少子采样
+encoder_0621_V1.py : 添加conv子采样，每一层之间有一个变化的embedding，识别效果全是用一句话
+
+encoder_0621_V2.py:
+layer(xs, chunk_masks, pos_emb, mask_pad) 中的维度必须对上，pos_emb :384,conformer每一层的conformer输出不同,xs 及 pos_emb必须与输出尺寸匹配
+
